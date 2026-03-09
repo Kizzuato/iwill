@@ -1,0 +1,101 @@
+# I-WILL Dashboard
+
+An interactive dashboard built with Next.js and Rive animations.
+
+## Features
+
+- **Interactive Rive Animations** - Smooth, interactive animations powered by Rive
+- **Card Selection Dashboard** - Choose from 4 project cards (AngklungineX, Drone, R.O.V.E.R, S.A.R.A.H CITRA)
+- **Character Selection** - Select from 3 characters:
+- **Journey Pages** - Unique themed pages for each character
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) - React framework
+- [Rive](https://rive.app/) - Animation platform
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd I-WILLDashboard
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+I-WILLDashboard/
+??? public/
+?   ??? dashboard.riv          # Main dashboard animation
+?   ??? choose_your_hero!.riv  # Character selection animation
+??? src/
+?   ??? app/
+?   ?   ??? globals.css        # Global styles
+?   ?   ??? layout.tsx         # Root layout
+?   ?   ??? page.tsx           # Home page
+?   ??? components/
+?       ??? RiveDashboard.tsx  # Main dashboard component
+??? package.json
+??? tailwind.config.ts
+??? tsconfig.json
+```
+
+## Customization
+
+### Adjusting Card Zones
+
+Edit `CARD_ZONES` in `src/components/RiveDashboard.tsx`:
+
+```typescript
+const CARD_ZONES = [
+  { name: "AngklungineX", minX: 0, maxX: 0.25 },
+  { name: "Drone", minX: 0.25, maxX: 0.50 },
+  { name: "R.O.V.E.R", minX: 0.50, maxX: 0.75 },
+  { name: "S.A.R.A.H CITRA", minX: 0.75, maxX: 1.0 },
+];
+```
+
+### Adjusting Character Zones
+
+Edit `HERO_ZONES` in `src/components/RiveDashboard.tsx`:
+
+```typescript
+const HERO_ZONES = [
+  { name: "Archer", minX: 0, maxX: 0.33, minY: 0, maxY: 0.65 },
+  { name: "Knight", minX: 0.33, maxX: 0.66, minY: 0, maxY: 0.65 },
+  { name: "Thief", minX: 0.66, maxX: 1.0, minY: 0, maxY: 0.65 },
+];
+```
+
+## Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## License
+
+MIT
