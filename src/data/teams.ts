@@ -619,41 +619,52 @@ export const teams: Team[] = [
                 slug: "ari",
                 name: "Ari Ferdiana",
                 photo: "/members/ari.jpg",
-                role: "Team Leader & IoT Architect",
+                role: "Hardware and Electrical Engineer",
                 status: "ACTIVE",
                 email: "ari.ferdiana@mhs.itenas.ac.id",
-                phone: "+62 812 3333 0001",
+                phone: "+6285860535626",
                 location: "Bandung, Indonesia",
-                bio: "Informatics undergraduate with strong passion for computer networks, IoT, and creative design. Experienced in IT support, microcontroller-based IoT systems, network infrastructure, and UI/UX prototyping.",
+                bio: "Informatics undergraduate student with a strong passion for computer networks, IoT, and creative design. I highly value the continuous learning process and actively explore new technologies—from software development to microcontrollers. Backed by experience in IT support, I am driven to develop my skills, share knowledge with others, and build impactful and useful technological solutions.",
                 shortDesc: "Informatics student leading IoT and computer network-based projects.",
                 tags: ["IoT", "Computer Networks", "UI/UX", "Raspberry Pi", "Arduino"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2024 - Present", gpa: "" }],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2024 - Present", gpa: "-" },
+                    { degree: "High School Diploma (Teknik Komputer dan Jaringan/Computer and Network Major)", institution: "SMK NEGERI 2 BALEENDAH", year: "2020 - 2023", gpa: " 87.13/100.00" }
+                ],
                 experience: [
-                    { title: "Team Leader & IoT Architect", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin strategi sistem operasi, navigasi, dan infrastruktur IoT terpadu untuk NetraDUMP." },
+                    // { title: "Team Leader & IoT Architect", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin strategi sistem operasi, navigasi, dan infrastruktur IoT terpadu untuk NetraDUMP." },
                     {
                         title: "IT Support Intern",
                         company: "Hotel Holiday Inn Pasteur",
                         period: "Aug 2022 – Dec 2022",
-                        description: "Memberikan dukungan teknis harian untuk hardware, software, dan jaringan, termasuk troubleshooting POS dan infrastruktur jaringan."
+                        description: "● Daily technical support for hardware, software, and network systems to ensure smooth hotel operations.\n● Assisted in maintaining the hotel’s network infrastructure, including troubleshooting internet connectivity and point-of-sale (POS) systems.\n● Performed software installation, configuration, and updates on staff computers and internal hotel systems.\n● Collaborated with the operations team to handle technical requests during the internship, improving IT response efficiency."
+                    },
+                    {
+                        title: "Human Resource Management Staff",
+                        company: "Himpunan Mahasiswa Informatika Itenas",
+                        period: "Dec 2024 – Dec 2025",
+                        description: "● Tracking and managing 200+ organization members’ development."
                     }
                 ],
                 skills: [
-                    { name: "Python / PHP / HTML / CSS / Laravel", level: 82 },
-                    { name: "Raspberry Pi / Arduino / ESP32", level: 82 },
+                    { name: "Python, PHP, HTML, CSS, Laravel", level: 82 },
+                    { name: "Raspberry Pi, Arduino, ESP32, Actuators Integration", level: 82 },
                     { name: "Network Troubleshooting", level: 80 },
                     { name: "Figma & Creative Design", level: 80 },
-                    { name: "MySQL / Git / GitHub", level: 80 },
+                    { name: "MySQL, Git, GitHub", level: 80 },
+                    { name: "Native in Indonesian, Intermediate Proficiency in English.", level: 80 },
                 ],
                 projects: [
-                    { name: "NetraDUMP – Remote Trash Collection Mobile Robot", description: "Robot pengambil sampah dengan lengan robotik dan AI camera, dikendalikan secara remote dengan Raspberry Pi.", tech: ["Raspberry Pi", "Motors", "AI Camera"] },
-                    { name: "Smart Parking System", description: "Sistem parkir otomatis berbasis RFID untuk kontrol akses dan panduan tempat kosong.", tech: ["Arduino", "RFID", "Sensors"] },
-                    { name: "ecoGrow (Plant Care App UI/UX)", description: "Konsep UI/UX aplikasi perawatan tanaman dengan agenda perawatan dan scanning penyakit.", tech: ["Figma"] },
-                    { name: "Itenas Resource Center (Inventory Web App)", description: "Aplikasi manajemen inventaris berbasis Laravel dan MySQL untuk pengelolaan ruangan dan barang.", tech: ["Laravel", "MySQL"] },
+                    { name: "NetraDUMP – Remote Trash Collection Mobile Robot", description: "○ Developed a remote-controlled mobile robot equipped with a robotic arm and an AI camera, specifically designed for remote trash collection. \n○ Configured and programmed a Raspberry Pi to control the mobility motors, robotic arm movements, and integrate the AI vision system", tech: ["Raspberry Pi", "Motors", "AI Camera"] },
+                    { name: "Smart Parking System", description: "○ Developed an automated smart parking system utilizing RFID technology for access control. \n○ Designed the system to automatically open the parking gate upon successful RFID scanning and actively direct drivers to available empty parking spaces", tech: ["Arduino", "RFID", "Sensors"] },
+                    { name: "ecoGrow (Plant Care App UI/UX)", description: "○ Designed a comprehensive UI/UX concept using Figma for a plant care mobile application.\n ○ Created interactive prototypes featuring a care agenda, disease scanning capability, and an AI chat interface.", tech: ["Figma"] },
+                    { name: "Itenas Resource Center (Inventory Web App)", description: "○ Built a web-based inventory management system using the Laravel framework and MySQL database.\n ○ Implemented CRUD operations and database seeders to efficiently manage rooms, items, and categories.", tech: ["Laravel", "MySQL"] },
+                    { name: "Automated 3D Scanner", description: "○ Built a 3D scanning device utilizing an ESP32 microcontroller and a stepper motor for precise rotational control.\n ○ Developed a laser detection algorithm in Python using the OpenCV library to capture and process scanning data.", tech: ["Laravel", "MySQL"] },
                 ],
                 achievements: [
                     "Online Scholarship Competition (OSC) – Fully Funded Undergraduate Scholarship (2023)",
                 ],
-                social: { github: "https://github.com/ari", linkedin: "https://linkedin.com/in/ari" },
+                social: { github: "https://github.com/AriFerdiana", linkedin: "#" },
             },
             {
                 slug: "malendra",

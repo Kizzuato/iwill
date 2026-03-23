@@ -91,7 +91,7 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                     {/* Bio */}
                     <div className="mt-6 pt-6 border-t-2 border-dashed border-gray-300 dark:border-gray-700">
                         <h3 className="font-pixel text-sm text-primary mb-2">ABOUT</h3>
-                        <p className="text-sm leading-relaxed opacity-80">{member.bio}</p>
+                        <p className="text-sm leading-relaxed opacity-80 whitespace-pre-line">{member.bio}</p>
                     </div>
                 </motion.div>
 
@@ -182,7 +182,7 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                                         <span className="text-xs opacity-60">{exp.period}</span>
                                     </div>
                                     <p className="text-sm text-primary mb-1">{exp.company}</p>
-                                    <p className="text-sm opacity-70">{exp.description}</p>
+                                    <p className="text-sm opacity-70 whitespace-pre-line">{exp.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -200,7 +200,7 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                             {member.projects.map((project, idx) => (
                                 <div key={idx} className="p-4 bg-gray-100 dark:bg-zinc-800 border-2 border-black dark:border-white hover:shadow-pixel transition-all">
                                     <h4 className="font-bold text-primary mb-2">{project.name}</h4>
-                                    <p className="text-sm opacity-70 mb-3">{project.description}</p>
+                                    <p className="text-sm opacity-70 mb-3 whitespace-pre-line">{project.description}</p>
                                     <div className="flex flex-wrap gap-1">
                                         {project.tech.map((t) => (
                                             <span key={t} className="text-[10px] px-2 py-0.5 bg-background border border-foreground/30">{t}</span>
