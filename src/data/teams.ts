@@ -396,14 +396,14 @@ export const teams: Team[] = [
         fullName: "Smart Robotic Angklung System",
         logo: "/logos/angklungine-x.png",
         category: "IoT & AI",
-        description: "An innovative robotic system that modernizes the traditional West Javanese angklung by combining IoT and AI. Designed to preserve and promote Indonesia's cultural heritage through smart, automated performances.",
-        longDescription: "Angklungine X is an innovative robotic system that modernizes the traditional West Javanese angklung by combining IoT and AI technologies. The project aims to preserve and promote Indonesia's cultural heritage through smart, automated performances while making the instrument accessible to a wider audience.",
+        description: "AngklungineX is an Angklung Robot that modernizes the traditional West Javanese angklung by combining IoT and AI. Designed to preserve and promote Indonesia’s cultural heritage.",
+        longDescription: "AngklungineX is an Angklung Robot that modernizes the traditional West Javanese angklung by combining IoT and AI. Designed to preserve and promote Indonesia’s cultural heritage.",
         members: [
             {
                 slug: "shandy",
                 name: "Shandy Handika",
                 photo: "/members/shandy.JPG",
-                role: "Team Leader & Automation Engineer",
+                role: "Team Leader & Wiring & Programmer",
                 status: "INACTIVE",
                 email: "shandy.handika@mhs.itenas.ac.id",
                 phone: "+62 812 1111 0001",
@@ -421,77 +421,171 @@ export const teams: Team[] = [
             },
             {
                 slug: "rainova",
-                name: "Rainova",
+                name: "Rainova Rahaniawan",
                 photo: "/members/rainova.JPG",
                 role: "Mechanical & Hardware Engineer",
                 status: "ACTIVE",
-                email: "rainova@mhs.itenas.ac.id",
-                phone: "+62 812 1111 0002",
+                email: "rainova05@gmail.com",
+                phone: "082119709784",
                 location: "Bandung, Indonesia",
-                bio: "Contributing to the Angklungine X project with focus on hardware and mechanical systems.",
-                shortDesc: "Working on mechanical systems for automated angklung.",
-                tags: ["Hardware", "Mechanical", "Arduino"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.72/4.00" }],
+                bio: "An Informatics Engineering student passionate about technology, public speaking, and leadership. Proven experience as a speaker, event organizer, and national-level debate competitor. Adept in project management, team leadership, and technical innovation through real-world initiatives.",
+                shortDesc: "An Informatics Engineering student passionate about technology, public speaking, and leadership. Proven experience as a speaker, event organizer, and national-level debate competitor. Adept in project management, team leadership, and technical innovation through real-world initiatives.",
+                tags: ["Public Speaking", "Leadership", "Project Management", "Informatics", "Technical Innovation"],
+                education: [
+                    { degree: "Bachelor of Informatics Engineering", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.82/4.00" }
+                ],
                 experience: [
-                    { title: "Mechanical & Hardware Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Merancang aktuator fisik, komponen mekanik, dan cetakan 3D pada Angklungine X." }, { title: "Angklungine X Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Hardware development for robotic angklung." }],
-                skills: [{ name: "Arduino", level: 82 }, { name: "Servo Motors", level: 80 }, { name: "3D Printing", level: 75 }, { name: "Mechanical Design", level: 72 }],
-                projects: [{ name: "Actuator System", description: "Servo-based mechanism for angklung", tech: ["Servo", "Arduino", "3D Print"] }],
-                achievements: ["Angklungine X Team Member"],
-                social: { github: "https://github.com/rainova", linkedin: "https://linkedin.com/in/rainova" },
-            },
-            {
-                slug: "melvina",
-                name: "Melvina",
-                photo: "/members/melvina.JPG",
-                role: "Control Software Engineer",
-                status: "ACTIVE",
-                email: "melvina@mhs.itenas.ac.id",
-                phone: "+62 812 1111 0003",
-                location: "Bandung, Indonesia",
-                bio: "Developing software and control systems for the Angklungine X project.",
-                shortDesc: "Building control software for robotic angklung.",
-                tags: ["Software", "Python", "Control"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.75/4.00" }],
-                experience: [
-                    { title: "Control Software Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan perangkat lunak kendali MIDI dan serial Python untuk Angklungine X." }, { title: "Angklungine X Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Software development for robotic angklung." }],
-                skills: [{ name: "Python", level: 85 }, { name: "MIDI", level: 78 }, { name: "React", level: 75 }, { name: "Serial Comm", level: 72 }],
-                projects: [{ name: "Music Controller", description: "Software control for angklung performance", tech: ["Python", "MIDI", "Serial"] }],
-                achievements: ["Angklungine X Team Member"],
-                social: { github: "https://github.com/melvina", linkedin: "https://linkedin.com/in/melvina" },
-            },
-            {
-                slug: "yuddha-angklung",
-                name: "Yuddha",
-                photo: "/members/yuddha.JPG",
-                role: "Backend & Embedded Engineer",
-                status: "ACTIVE",
-                email: "yuddha@mhs.itenas.ac.id",
-                phone: "+62 812 1111 0004",
-                location: "Bandung, Indonesia",
-                bio: "Informatics student with strong interest and experience in software development and Internet of Things (IoT). Used to designing and developing backend web applications as well as microcontroller-based systems integrated with sensors and actuators.",
-                shortDesc: "Backend and IoT-oriented Informatics student working on full-stack and embedded systems.",
-                tags: ["Backend Development", "IoT", "Embedded Systems"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "" }],
-                experience: [
-                    { title: "Backend & Embedded Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Menghubungkan mikrokontroler dengan backend system untuk operasional mandiri Angklungine X." },
                     {
-                        title: "Software & IoT Developer",
-                        company: "Independent / Academic Projects",
-                        period: "2021 - Present",
-                        description: "Merancang dan mengembangkan aplikasi backend berbasis web serta sistem mikrokontroler terintegrasi sensor dan aktuator."
+                        title: "Marketing Squad | Public Speaker | Event Organizer",
+                        company: "Itenas",
+                        period: "2023 - Present",
+                        description: "● MC at major events such as Dies Natalis Itenas, Itenas Job Fair, ICGTD 2024, and Wisuda Itenas.\n● Moderator in educational seminars and workshops.\n● Represented Itenas in multiple Edufairs and roadshows."
+                    },
+                    {
+                        title: "Duta Bahasa Jawa Barat",
+                        company: "Balai Bahasa Jawa Barat",
+                        period: "2023 - Present",
+                        description: "● Achieved 2nd place in the Duta Bahasa competition and awarded Best Scientific Paper.\n● Acted as ceremony companion for the Education Festival of West Java (Hardiknas 2024)."
+                    },
+                    {
+                        title: "Debater | Speaker",
+                        company: "KMI & Debat Competition Team – Itenas",
+                        period: "2023 - Present",
+                        description: "● Best Speaker at Kemahasiswaan Awards Debate Competition; Team Champion 1st Place.\n● Achieved Top 8 at IDN Times National Debate."
                     }
                 ],
                 skills: [
-                    { name: "PHP / JavaScript / Python", level: 82 },
-                    { name: "REST API Development", level: 80 },
-                    { name: "SQL & Database Design", level: 80 },
-                    { name: "Object-Oriented Programming", level: 80 },
-                    { name: "Git Version Control", level: 78 },
-                    { name: "ESP32 / Arduino & Sensor Integration", level: 82 },
+                    { name: "Public Speaking", level: 0 },
+                    { name: "Project Management", level: 0 },
+                    { name: "Debate & Critical Thinking", level: 0 },
+                    { name: "Event Organizing", level: 0 },
+                    { name: "Team Leadership", level: 0 },
+                    { name: "Marketing & Communication", level: 0 },
+                    { name: "Programming Fundamentals", level: 0 },
+                    { name: "Technical Writing", level: 0 }
+                ],
+                projects: [
+                    {
+                        name: "Water Level Monitoring Project",
+                        description: "Developed and tested a real-time water level monitoring system for environmental sustainability projects.",
+                        tech: ["IoT", "Sensors"]
+                    }
+                ],
+                achievements: [
+                    "2nd Place Duta Bahasa Jawa Barat 2023",
+                    "Best Speaker - Kemahasiswaan Awards Debate Competition",
+                    "Best Scientific Paper - Duta Bahasa Jawa Barat"
+                ],
+                social: { github: "", linkedin: "", web: "" }
+            },
+            {
+                slug: "melvina",
+                name: "Melvina Cheda Rismayanta",
+                photo: "/members/melvina.JPG",
+                role: "Control Software Engineer",
+                status: "ACTIVE",
+                email: "melvinachdr@gmail.com",
+                phone: "085724929302",
+                location: "Bandung, Indonesia",
+                bio: "I am an undergraduate student majoring in Informatics at Institut Teknologi Nasional Bandung (ITENAS). I can use Microsoft Word, and Excel. I have experience in the art of the event of a show, managing a data and finances through organizational opportunities during my school. I am currently looking for job opportunities that can give you a chance to grow.",
+                shortDesc: "I am an undergraduate student majoring in Informatics at Institut Teknologi Nasional Bandung (ITENAS). I can use Microsoft Word, and Excel. I have experience in the art of the event of a show, managing a data and finances through organizational opportunities during my school. I am currently looking for job opportunities that can give you a chance to grow.",
+                tags: ["Administration", "Finance Management", "Event Organizing", "Customer Relations"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "-" },
+                    { degree: "Science Major", institution: "SMA Negeri 1 Katapang", year: "2022", gpa: "-" }
+                ],
+                experience: [
+                    {
+                        title: "Operational Staff",
+                        company: "Khalisa Florist",
+                        period: "August 2024 - Present",
+                        description: "● Responsible for supporting the operations of the store."
+                    },
+                    {
+                        title: "Staff Kitchen",
+                        company: "Dreezel Coffee",
+                        period: "August 2024 - October 2024",
+                        description: "● Responsibility is to provide the best service to customers."
+                    },
+                    {
+                        title: "Staff of Financial Supervision",
+                        company: "HIMIF - BPK",
+                        period: "June 2024 - Present",
+                        description: "● Responsible for ensuring the accurate management of financial activities in accordance with applicable policies and regulations."
+                    },
+                    {
+                        title: "Staff of Departement PSDM",
+                        company: "Linggawara",
+                        period: "June 2024 - Present",
+                        description: "● Responsible for supporting various operational and administrative activities within the department."
+                    },
+                    {
+                        title: "PIC of Linggawara",
+                        company: "Linggawara",
+                        period: "June 2024 - Present",
+                        description: "● Responsible for managing and overseeing all operational aspects and activities related to Linggawara."
+                    },
+                    {
+                        title: "Class Treasurer",
+                        company: "OSIS",
+                        period: "January 2018 - January 2019",
+                        description: "● Responsibility for income/financial expenses, and develop a budget for organization."
+                    }
+                ],
+                skills: [
+                    { name: "Customer Support & Relations", level: 0 },
+                    { name: "Administration & Self Management", level: 0 },
+                    { name: "Team Work", level: 0 },
+                    { name: "Microsoft Office (Word, Excel, PowerPoint)", level: 0 },
+                    { name: "Canva", level: 0 },
+                    { name: "Language: Indonesian (Native)", level: 0 },
+                    { name: "Language: English (Passive)", level: 0 }
                 ],
                 projects: [],
-                achievements: ["Angklungine X Team Member"],
-                social: { github: "https://github.com/yuddha", linkedin: "https://linkedin.com/in/yuddha" },
+                achievements: [
+                    "Microsoft Office Certification Exam 2016 (July 2023)",
+                    "Lulusnegeri.com UMBK Training Scholarship (January 2023)"
+                ],
+                social: { github: "", linkedin: "", web: "", instagram: "https://instagram.com/melvinach_" }
+            },
+            {
+                slug: "yuddha-angklung",
+                name: "Yuddha Wastu Pramukha",
+                photo: "/members/yuddha.JPG",
+                role: "Website Developer",
+                status: "ACTIVE",
+                email: "wastupramukha@gmail.com",
+                phone: "+6282117993766",
+                location: "Bandung, Indonesia",
+                bio: "Informatics undergraduate student with a strong interest and experience in software development and Internet of Things (IoT) systems. Accustomed to designing and developing web-based backend applications as well as building microcontroller-based systems integrated with sensors and actuators. Possesses a systematic approach to problem-solving, from requirements analysis and software architecture design to circuit design (wiring), implementation, and system testing. End-to-end solution oriented, bridging physical devices to digital systems.",
+                shortDesc: "Informatics undergraduate student with a strong interest and experience in software development and Internet of Things (IoT) systems. Accustomed to designing and developing web-based backend applications as well as building microcontroller-based systems integrated with sensors and actuators.",
+                tags: ["Backend Development", "IoT", "Embedded Systems", "REST API Development", "Hardware Integration"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "-" },
+                    { degree: "Vocational High School Degree (Software Engineering)", institution: "SMKN 4 Bandung", year: "2021 - 2024", gpa: "-" }
+                ],
+                experience: [],
+                skills: [
+                    { name: "Software Development: PHP / JavaScript / Python", level: 0 },
+                    { name: "SQL & Database Design", level: 0 },
+                    { name: "REST API Development", level: 0 },
+                    { name: "Object-Oriented Programming", level: 0 },
+                    { name: "Git Version Control", level: 0 },
+                    { name: "IoT & Embedded Systems: ESP32 / Arduino", level: 0 },
+                    { name: "Sensor Integration (DHT22, LDR, etc.)", level: 0 },
+                    { name: "Digital & Analog Input Processing", level: 0 },
+                    { name: "Basic Electronics & Wiring", level: 0 },
+                    { name: "IoT Platform Integration (Blynk)", level: 0 }
+                ],
+                projects: [
+                    {
+                        name: "Queue Ticketing System (Four Vision Media - 2024)",
+                        description: "Developed a cooperative website featuring an online queue taking and booking system.",
+                        tech: []
+                    }
+                ],
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" }
             },
         ],
     },
