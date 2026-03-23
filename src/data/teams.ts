@@ -744,34 +744,50 @@ export const teams: Team[] = [
             },
             {
                 slug: "lingga",
-                name: "M. Lingga Darmawan",
+                name: "Muhamad Lingga Darmawan",
                 photo: "/members/lingga.jpg",
-                role: "IoT & Database Administrator",
+                role: "Mechanical Systems Engineer",
                 status: "ACTIVE",
-                email: "lingga@mhs.itenas.ac.id",
-                phone: "+62 812 3333 0003",
+                email: "muhamad.lingga@mhs.itenas.ac.id",
+                phone: "+6281321763162",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with portfolio focused on IoT prototypes, computer vision, web development, and academic projects integrating sensors and AI-based analysis.",
-                shortDesc: "Informatics student working on IoT and computer vision-based academic projects.",
-                tags: ["IoT", "Digital Image Processing", "Database Programming"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - Present", gpa: "" }],
+                bio: "Detail-oriented and curious undergraduate Computer Science student with hands-on experience in IT infrastructure and network administration. Skilled in configuring LAN, basic server setup, and network security. Demonstrated leadership in team projects and student organizations. Fast learner, adaptable to new technologies, and able to work both independently and in a team environment.",
+                shortDesc: "Detail-oriented and curious undergraduate Computer Science student with hands-on experience in IT infrastructure and network administration",
+                tags: [],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "Sep 2024 - Present", gpa: "-" },
+                    { degree: "High School Diploma (Computer and Network Major)", institution: "SMK Prakarya Internasional", year: "Jul 2021 - Jul 2024", gpa: "89.51/100.00" }
+                ],
                 experience: [
-                    { title: "IoT & Database Administrator", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengelola server basis data dan menopang konektivitas sensor telemetri NetraDUMP." },
                     {
                         title: "IT Support Intern",
                         company: "PT. Sarana Pactindo Bandung",
                         period: "Jan 2023 – 2023",
-                        description: "Memantau performa jaringan, troubleshooting hardware/software, dan perbaikan sistem server."
+                        description: "● Monitor and record the performance of servers and networks to ensure system availability and stability, while detecting potential issues early.\n● Diagnose and repair faulty hardware and software, provide technical support, and ensure systems are running optimally.\n● Perform regular maintenance and inspections on gensets and UPS to ensure optimal backup power availability and prevent operational disruptions."
+                    },
+                    {
+                        title: "Student Representative Council Staff",
+                        company: "Himpunan Mahasiswa Informatika Itenas",
+                        period: "Jan 2025 – Present",
+                        description: "● Representing students' voices, bridging communication between students and the campus authorities, organizing activities, and advocating for students' rights and interests regarding policies, facilities, and programs that affect them."
+                    },
+                    {
+                        title: "Paskibra",
+                        company: "-",
+                        period: "2019 – 2024",
+                        description: "● Active member for 6 years during junior high and vocational high school, involved in regular training, ceremony executions, and marching competitions at school, district national levels."
                     }
                 ],
                 skills: [
-                    { name: "Python", level: 82 },
-                    { name: "Arduino / Raspberry Pi", level: 80 },
-                    { name: "Network & Server Administration", level: 80 },
+                    { name: "Computer and network setup and configuration (Cisco, mikrotik OS, server)", level: 0 }
                 ],
-                projects: [],
-                achievements: ["NetraDUMP Team Member"],
-                social: { github: "https://github.com/lingga", linkedin: "https://linkedin.com/in/lingga" },
+                projects: [
+                    { name: "LAMP & LEMP Stack (2024)", description: "Set up Apache/Nginx, MySQL, and PHP on Linux to host dynamic websites.", tech: [] },
+                    { name: "Nextcloud (2024)", description: "Deployed private cloud storage with SSL and device sync.", tech: [] },
+                    { name: "Laravel DevOps (2024)", description: "Automated Laravel deployment with CI/CD tools.", tech: [] }
+                ],
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" },
             },
         ],
     },
