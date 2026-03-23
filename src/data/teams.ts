@@ -1478,136 +1478,208 @@ export const teams: Team[] = [
         slug: "carrymate",
         name: "CarryMate",
         fullName: "Following Robot Assistant",
-        logo: "/logos/carrymate.png",
+        logo: "/logos/carryMate.png",
         category: "IoT & AI",
-        description: "A trolley robot that follows its owner using camera detection integrated with Raspberry Pi. Perfect for supermarkets or suitcases, carrying items without manual pushing or lifting.",
-        longDescription: "CarryMate is a trolley robot that follows its owner using camera detection integrated with Raspberry Pi. It's designed to be perfect for use in supermarkets or as an automated suitcase, carrying items without the need for manual pushing or lifting.",
+        description: "CarryMate is an intelligent shopping cart system that integrates Deep Learning algorithms YOLOv8 and DeepSort to enable automatic and responsive human-following tracking. The system combines ultrasonic sensors for real-time distance monitoring with remote control via a mobile application and trolley management through a web-based application using the MQTT protocol.",
+        longDescription: "CarryMate is an intelligent shopping cart system that integrates Deep Learning algorithms YOLOv8 and DeepSort to enable automatic and responsive human-following tracking. The system combines ultrasonic sensors for real-time distance monitoring with remote control via a mobile application and trolley management through a web-based application using the MQTT protocol.",
         members: [
             {
                 slug: "rifqi",
-                name: "M. Rifqi Yusufi",
+                name: "Muhammad Rifqi Yusufi",
                 photo: "/members/yusuf.jpg",
-                role: "Team Leader & Lead CV Engineer",
+                role: "Tim Leader & AI Engineer & Hardware Developer",
                 status: "ACTIVE",
-                email: "rifqi@mhs.itenas.ac.id",
-                phone: "+62 812 7777 0001",
+                email: "rifqi.yusufi@gmail.com",
+                phone: "+62-815-1501-5102",
                 location: "Bandung, Indonesia",
-                bio: "Sixth-semester Informatics student with deep interest in artificial intelligence, computer vision, and robotics. Experienced in building real-time tracking systems, deep learning pipelines, and perception systems integrated with hardware using Python, C++, TensorFlow, and OpenCV.",
-                shortDesc: "AI and computer-vision focused student leading CarryMate development.",
-                tags: ["Computer Vision", "Deep Learning", "Robotics", "Python"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional, Bandung", year: "2023 - Present", gpa: "3.90/4.00" }],
+                bio: "Sixth-semester Informatics student with a deep interest in artificial intelligence, computer vision, and robotics. Experienced in developing real-time tracking models, deep learning pipelines, and robotics-based perception systems. Proficient in Python, C++, TensorFlow, and OpenCV, with experience integrating AI models into hardware environments.",
+                shortDesc: "Sixth-semester Informatics student with a deep interest in artificial intelligence, computer vision, and robotics. Experienced in developing real-time tracking models, deep learning pipelines, and robotics-based perception systems. Proficient in Python, C++, TensorFlow, and OpenCV, with experience integrating AI models into hardware environments.",
+                tags: ["Artificial Intelligence", "Computer Vision", "Deep Learning", "Robotics", "Python"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional, Bandung", year: "2023 - Present", gpa: "3.90/4.00" }
+                ],
                 experience: [
-                    { title: "Team Leader & Lead CV Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin deteksi penglihatan komputer (DeepSORT/YOLOv8) untuk sistem troli otomatis CarryMate." },
                     {
-                        title: "Lead Developer – CarryMate",
-                        company: "I-WILL Laboratory",
-                        period: "Sep 2025 – Jan 2026",
-                        description: "Merancang arsitektur navigasi AI CarryMate dan mengoordinasikan pengembangan modul persepsi, kontrol motor, dan AI."
+                        title: "Lead Developer",
+                        company: "CarryMate",
+                        period: "September 2025 - January 2026",
+                        description: "● Designed AI navigation architecture, integrated sensors, control, and AI, and implemented human-following using YOLOv8n, DeepSort, and geometric distance estimation."
                     },
                     {
-                        title: "Machine Learning Developer – Sistem Pendeteksi Kematangan Pisang",
-                        company: "Academic Project",
-                        period: "Dec 2024 – Jan 2025",
-                        description: "Mengembangkan sistem deteksi tingkat kematangan pisang berbasis fitur warna RGB/HSV dan KNN dengan akurasi tinggi."
+                        title: "Machine Learning Developer",
+                        company: "Banana Ripeness Detection System",
+                        period: "December 2024 - January 2025",
+                        description: "● Built a two-stage detection system with a contour-based detector and ripeness classification using RGB and HSV features. KNN model achieved 96.07% accuracy."
                     },
                     {
-                        title: "Machine Learning Engineer – Sistem Pendeteksi Bahasa Isyarat",
-                        company: "Academic Project",
-                        period: "Jul 2025 – Aug 2025",
-                        description: "Membangun model LSTM untuk klasifikasi 59 variasi bahasa isyarat secara real-time dengan pipeline berbasis MediaPipe."
+                        title: "Machine Learning Engineer",
+                        company: "Sign Language Detection System",
+                        period: "July 2025 - August 2025",
+                        description: "● Developed an LSTM-based deep learning model using TensorFlow for real-time classification of 59 sign language variations, achieving 74.19% accuracy."
                     },
                     {
-                        title: "Asisten Praktikum Pemrograman Basis Data",
+                        title: "Lab Assistant (Database Programming)",
                         company: "ITENAS",
-                        period: "Oct 2025 – Jan 2026",
-                        description: "Mendampingi praktikum pemrograman basis data dan membantu mahasiswa memahami konsep database."
+                        period: "October 2025 - January 2026",
+                        description: "● Mentored students in database programming and helped them understand core database concepts."
                     }
                 ],
                 skills: [
-                    { name: "Python", level: 90 },
-                    { name: "TensorFlow / Keras", level: 88 },
-                    { name: "OpenCV / MediaPipe", level: 85 },
-                    { name: "C++ / JavaScript", level: 80 },
-                    { name: "ESP32 / Raspberry Pi", level: 82 },
+                    { name: "Programming: Python, C++, JavaScript", level: 90 },
+                    { name: "Frameworks: TensorFlow, NumPy, Pandas, OpenCV, MediaPipe", level: 88 },
+                    { name: "Hardware: ESP32, Raspberry Pi", level: 82 },
+                    { name: "Language: Indonesian (Native), English (Fluent)", level: 85 }
                 ],
                 projects: [
-                    { name: "CarryMate – Sistem Troli Pintar", description: "Sistem human-following real-time menggunakan YOLOv8n, DeepSORT, dan estimasi jarak/sudut geometris.", tech: ["Python", "YOLOv8", "DeepSORT", "OpenCV"] },
-                    { name: "Sistem Pendeteksi Kematangan Pisang", description: "Deteksi tingkat kematangan pisang dengan KNN dan fitur warna RGB/HSV.", tech: ["Python", "KNN", "Image Processing"] },
-                    { name: "Sistem Pendeteksi Bahasa Isyarat", description: "Klasifikasi bahasa isyarat real-time berbasis LSTM dan keypoint MediaPipe.", tech: ["Python", "LSTM", "MediaPipe"] },
+                    {
+                        name: "CarryMate – Intelligent Shopping Cart",
+                        description: "Real-time human-following system using YOLOv8n, DeepSort, and geometric angle/distance estimation.",
+                        tech: ["Python", "YOLOv8", "DeepSort", "OpenCV"]
+                    },
+                    {
+                        name: "Banana Ripeness Detection",
+                        description: "Ripeness classification system using contour masking, RGB/HSV extraction, and KNN (96.07% accuracy).",
+                        tech: ["Python", "KNN", "Image Processing"]
+                    },
+                    {
+                        name: "Sign Language Recognition",
+                        description: "Real-time classification for 59 sign language variations using LSTM and keypoint extractions via MediaPipe.",
+                        tech: ["TensorFlow", "MediaPipe", "LSTM"]
+                    }
                 ],
-                achievements: ["CarryMate Team Leader"],
-                social: { github: "https://github.com/rifqi", linkedin: "https://linkedin.com/in/rifqi" },
+                achievements: [
+                    "CarryMate Lead Developer",
+                    "Lab Assistant - Database Programming"
+                ],
+                social: { github: "", linkedin: "" }
             },
             {
                 slug: "luthfiandi",
                 name: "Luthfiandi Rizki Kurnia",
                 photo: "/members/luthfi.jpg",
-                role: "Computer Vision Engineer",
+                role: "Mobile Developer",
                 status: "ACTIVE",
-                email: "luthfiandi@mhs.itenas.ac.id",
-                phone: "+62 812 7777 0002",
+                email: "luthfiandilrk@gmail.com",
+                phone: "+62895344024316",
                 location: "Bandung, Indonesia",
-                bio: "Developing computer vision systems for person detection and tracking.",
-                shortDesc: "Building person detection and tracking systems.",
-                tags: ["Computer Vision", "Tracking", "Python"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.76/4.00" }],
-                experience: [
-                    { title: "Computer Vision Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Menjalankan pemrosesan citra pelacakan objek geometris spasial untuk CarryMate." }, { title: "CarryMate Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Computer vision development." }],
-                skills: [{ name: "Python", level: 85 }, { name: "Object Detection", level: 82 }, { name: "OpenCV", level: 85 }, { name: "Tracking", level: 80 }],
-                projects: [{ name: "Person Tracking", description: "Person detection and tracking system", tech: ["Python", "YOLO", "DeepSORT"] }],
-                achievements: ["CarryMate Team Member"],
-                social: { github: "https://github.com/luthfiandi", linkedin: "https://linkedin.com/in/luthfiandi" },
-            },
-            {
-                slug: "rizky",
-                name: "Muhammad Rizky",
-                photo: "/members/rizky.jpg",
-                role: "Software & Web Developer",
-                status: "ACTIVE",
-                email: "rizky@mhs.itenas.ac.id",
-                phone: "+62 812 7777 0003",
-                location: "Bandung, Indonesia",
-                bio: "Informatics student with strong passion for coding, innovation, and software engineering. Experienced in app development, IoT systems, and web-based solutions using PHP/Laravel and JavaScript stacks.",
-                shortDesc: "Software engineer in training focusing on web apps and IoT systems.",
-                tags: ["Web Development", "Laravel", "IoT", "Backend"],
+                bio: "A dedicated sixth-semester student focused on the practical application of autonomous vision systems and real-time spatial analytics. Actively developing skills in architecting robotics pipelines and optimizing YOLO-based tracking for edge devices. Passionate about bridging neural network models with physical hardware actuation through efficient asynchronous data orchestration and image engineering.",
+                shortDesc: "A dedicated sixth-semester student focused on the practical application of autonomous vision systems and real-time spatial analytics. Actively developing skills in architecting robotics pipelines and optimizing YOLO-based tracking for edge devices. Passionate about bridging neural network models with physical hardware actuation through efficient asynchronous data orchestration and image engineering.",
+                tags: ["Autonomous Systems", "Computer Vision", "Real-time Spatial Analytics", "Image Engineering", "Robotics"],
                 education: [
-                    { degree: "Bachelor of Computer Science (Software Engineering)", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.76/4.00" },
-                    { degree: "High School", institution: "SMK Bakti Nusantara 666", year: "2020 - 2023", gpa: "" },
+                    { degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology (ITENAS)", year: "2023 - Present", gpa: "3.73/4.00" }
                 ],
                 experience: [
-                    { title: "Software & Web Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan aplikasi website antarmuka pengguna berbasis PHP/Laravel untuk CarryMate." },
                     {
-                        title: "Software Developer – CarryMate",
-                        company: "I-WILL Laboratory",
-                        period: "Sep 2025 – Present",
-                        description: "Mengembangkan komponen software untuk sistem troli pintar dan integrasi sistem."
+                        title: "Computer Vision Engineer",
+                        company: "CarryMate",
+                        period: "September 2025 - Present",
+                        description: "● Designed a low-latency robotics ecosystem using WebSockets for real-time visual data orchestration and engineered a high-precision YOLOv8/DeepSort human-tracking pipeline.\n● Developed a Stream-based Flutter application for telemetry monitoring via MQTT and implemented a handshaking system for multi-device scalability.\n● Engineered industrial-grade safety layers using Ultrasonic Interlock and Arduino Watchdog Timers."
                     },
                     {
-                        title: "Full Stack Developer – Aplikasi Pengaduan Masyarakat",
-                        company: "SMK Bakti Nusantara 666",
-                        period: "Jan 2023 – Feb 2023",
-                        description: "Membangun aplikasi pengaduan masyarakat berbasis Laravel dengan autentikasi dan dashboard pelaporan."
+                        title: "Technical & Commercial Intern",
+                        company: "MUJ ONWJ",
+                        period: "September 2025 - Present",
+                        description: "● Architected an automated image processing pipeline for high-speed data ingestion and minimal I/O latency.\n● Orchestrated Redis-backed background workers for intensive image transformations and metadata extraction.\n● Engineered a data integration platform using React 19 & Laravel 11 to visualize real-time operational patterns."
                     },
                     {
-                        title: "Full Stack Developer – Computer Assisted Test (CAT)",
-                        company: "PRIMKOPPOL SATBRIMOB POLDA JABAR",
-                        period: "Aug 2023 – Dec 2023",
-                        description: "Mengembangkan sistem ujian berbasis web dengan bank soal, timer, scoring otomatis, dan manajemen pengguna."
+                        title: "IoT & Vision Developer",
+                        company: "Smart Parking System",
+                        period: "July 2025 - August 2025",
+                        description: "● Engineered an automated vehicle detection pipeline using YOLO with N-frame skip inference for GPU/CPU optimization.\n● Developed occupancy logic using IoU and spatial thresholding.\n● Architected a Concurrent Flask system to decouple AI inference from video streaming."
                     }
                 ],
                 skills: [
-                    { name: "PHP / Laravel / CodeIgniter", level: 85 },
-                    { name: "HTML / CSS / JavaScript / Bootstrap", level: 85 },
-                    { name: "MySQL", level: 82 },
-                    { name: "Python / C++ / Pascal", level: 75 },
+                    { name: "Vision: YOLOv8, DeepSort, OpenCV, PyTorch, Image Processing, Scikit-Learn", level: 92 },
+                    { name: "Systems: Python (Asyncio), Raspberry Pi, MQTT, WebSockets, Edge Computing", level: 88 },
+                    { name: "Development: React 19, Laravel 11, Node.js, SQL, RESTful APIs, Git, Linux", level: 85 },
+                    { name: "Language: Indonesian (Native), English (Professional Working Proficiency)", level: 85 }
                 ],
                 projects: [
-                    { name: "CarryMate – Smart Trolley System", description: "Kontributor software pada sistem troli pintar berbasis visi komputer.", tech: ["Python", "Web", "IoT"] },
-                    { name: "Aplikasi Pengaduan Masyarakat", description: "Sistem pelaporan publik dengan manajemen pengaduan dan autentikasi.", tech: ["Laravel", "MySQL", "Bootstrap"] },
-                    { name: "Computer Assisted Test Web Application", description: "Aplikasi ujian berbantuan komputer dengan manajemen soal dan peserta.", tech: ["Laravel", "MySQL"] },
+                    {
+                        name: "CarryMate Robotics Infrastructure",
+                        description: "Low-latency robotics ecosystem integrating AI servers and edge devices for real-time visual orchestration.",
+                        tech: ["WebSockets", "YOLOv8", "DeepSort", "Flutter"]
+                    },
+                    {
+                        name: "Botanical Specimen Classification",
+                        description: "Herb leaf identification pipeline using GLCM textures and KNN optimized via GridSearchCV (95.6% accuracy).",
+                        tech: ["GLCM", "KNN", "Image Processing"]
+                    },
+                    {
+                        name: "IoT Smart Parking",
+                        description: "Automated vehicle detection pipeline with geometric spatial analysis and multithreaded inference engine.",
+                        tech: ["Flask", "YOLO", "ESP32", "IoU"]
+                    }
                 ],
-                achievements: ["CarryMate Team Member"],
-                social: { github: "https://github.com/rizky", linkedin: "https://linkedin.com/in/rizky" },
+                achievements: [
+                    "NVIDIA Certification - Fundamentals of Deep Learning",
+                    "CarryMate Computer Vision Engineer"
+                ],
+                social: { github: "", linkedin: "https://linkedin.com/in/luthfiandirk" }
+            },
+            {
+                slug: "rizky",
+                name: "Muhamad Rizky",
+                photo: "/members/rizky.jpg",
+                role: "Website Developer",
+                status: "ACTIVE",
+                email: "mhmdrizky2605@gmail.com",
+                phone: "+62-822-1666-7276",
+                location: "Bandung, Jawa Barat, Indonesia",
+                bio: "I am an active Informatics student at ITENAS with a strong passion for coding, technology, and innovation. My academic focus includes app development, IoT systems, and software engineering, where I continuously challenge myself to solve problems through technology-driven solutions. With a current GPA of 3.76/4.00, I am eager to keep improving my skills and seeking opportunities to contribute to impactful projects.",
+                shortDesc: "I am an active Informatics student at ITENAS with a strong passion for coding, technology, and innovation. My academic focus includes app development, IoT systems, and software engineering, where I continuously challenge myself to solve problems through technology-driven solutions. With a current GPA of 3.76/4.00, I am eager to keep improving my skills and seeking opportunities to contribute to impactful projects.",
+                tags: ["Software Engineering", "Web Development", "IoT System", "Informatics"],
+                education: [
+                    { degree: "Bachelor of Computer Science (Software Engineering)", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.76/4.00" },
+                    { degree: "High School (Software Engineering)", institution: "SMK Bakti Nusantara 666", year: "2020 - 2023", gpa: "-" }
+                ],
+                experience: [
+                    {
+                        title: "Software Developer",
+                        company: "CarryMate",
+                        period: "September 2025 - Present",
+                        description: "● Built dynamic and reusable UI components using React.js and modern JavaScript.\n● Managed application state and API integration to display real-time data efficiently.\n● Designed and developed RESTful APIs using Node.js for web applications.\n● Implemented database operations (CRUD) with MySQL and proper relational mapping."
+                    },
+                    {
+                        title: "Full Stack Developer",
+                        company: "SMK Bakti Nusantara 666",
+                        period: "January 2023 - February 2023",
+                        description: "● Developed a web-based complaint management system for public reporting using Laravel framework.\n● Designed and implemented CRUD functionalities, user authentication, and complaint tracking dashboards.\n● Ensured responsive UI/UX for both users and administrators."
+                    },
+                    {
+                        title: "Full Stack Developer",
+                        company: "PRIMKOPPOL SATBRIMOB POLDA JABAR",
+                        period: "August 2023 - December 2023",
+                        description: "● Built a web-based Computer Assisted Test (CAT) application using Laravel to manage online examinations efficiently.\n● Developed features including question banks, timed tests, automatic scoring, and user management for students and administrators.\n● Integrated role-based access control and ensured a responsive UI for a smooth test-taking experience."
+                    }
+                ],
+                skills: [
+                    { name: "Languages: PHP, Python, C++, Pascal, HTML, CSS, JS", level: 85 },
+                    { name: "Web Tech: React.js, Node.js, Laravel, CodeIgniter, Bootstrap", level: 88 },
+                    { name: "Database: MySQL", level: 82 },
+                    { name: "Languages: Indonesian (Fluent), English (Proficient)", level: 85 }
+                ],
+                projects: [
+                    {
+                        name: "CarryMate – Smart Trolley System",
+                        description: "Development of software components and system integration for an intelligent trolley system.",
+                        tech: ["React.js", "Node.js", "MySQL", "JavaScript"]
+                    },
+                    {
+                        name: "Public Complaint Web Application",
+                        description: "Web-based complaint management system for public reporting with authentication and tracking dashboards.",
+                        tech: ["Laravel", "MySQL", "PHP"]
+                    },
+                    {
+                        name: "Computer Assisted Test (CAT) Web Application",
+                        description: "Web-based online examination system with role-based access control and automatic scoring.",
+                        tech: ["Laravel", "MySQL", "PHP"]
+                    }
+                ],
+                achievements: [
+                    "CarryMate Software Developer"
+                ],
+                social: { github: "", linkedin: "" }
             },
             {
                 slug: "nizar",
@@ -1615,19 +1687,66 @@ export const teams: Team[] = [
                 photo: "/members/nizar.jpg",
                 role: "Mobile App & Control Developer",
                 status: "ACTIVE",
-                email: "nizar@mhs.itenas.ac.id",
-                phone: "+62 812 7777 0004",
+                email: "nizar.abdul@mhs.itenas.ac.id",
+                phone: "+62 895 1991 3802",
                 location: "Bandung, Indonesia",
-                bio: "Developing control software and mobile app for CarryMate.",
-                shortDesc: "Building control software and mobile application.",
-                tags: ["Python", "Mobile App", "IoT"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.74/4.00" }],
+                bio: "Third-year Computer Science student at Institut Teknologi Nasional Bandung with hands-on experience in Python, C++. Skilled in developing Machine Learning models and building autonomous robotic systems. Actively involved in student organizations and event committees, demonstrating strong collaboration and leadership abilities. Highly adaptable, detail-oriented, and consistently eager to learn new technologies to support continuous growth in the tech field.",
+                shortDesc: "Third-year Computer Science student at Institut Teknologi Nasional Bandung with hands-on experience in Python, C++. Skilled in developing Machine Learning models and building autonomous robotic systems. Actively involved in student organizations and event committees, demonstrating strong collaboration and leadership abilities. Highly adaptable, detail-oriented, and consistently eager to learn new technologies to support continuous growth in the tech field.",
+                tags: ["Machine Learning", "Computer Vision", "Autonomous Systems", "Python", "Robotics"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS)", year: "2023 - Present", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Mobile App & Control Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun aplikasi kendali mobile jarak dekat via Bluetooth/WiFi untuk operasional CarryMate." }, { title: "CarryMate Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Software and app development." }],
-                skills: [{ name: "Python", level: 85 }, { name: "Flutter", level: 80 }, { name: "Bluetooth/WiFi", level: 78 }, { name: "REST APIs", level: 75 }],
-                projects: [{ name: "CarryMate App", description: "Mobile app for robot control", tech: ["Flutter", "Bluetooth", "Firebase"] }],
-                achievements: ["CarryMate Team Member"],
-                social: { github: "https://github.com/nizar", linkedin: "https://linkedin.com/in/nizar" },
+                    {
+                        title: "Computer Vision & Control Developer",
+                        company: "CarryMate",
+                        period: "August 2025 - December 2025",
+                        description: "● Developed real-time computer vision server using FastAPI and WebSocket on Raspberry Pi 4 for video processing and robot control integration.\n● Integrated hardware control features with Serial/Arduino interface and optimized processing pipeline through JPEG quality adjustment and frame skipping.\n● Implemented security measures including handshake and token authentication for network and hardware condition flexibility."
+                    },
+                    {
+                        title: "AI Developer",
+                        company: "Drowsiness Detection System",
+                        period: "November 2025 - December 2025",
+                        description: "● Developed end-to-end drowsiness detection system using CNN-based binary classification (EfficientNetB0) on 11,000+ images.\n● Integrated real-time computer vision pipeline using OpenCV and MediaPipe Face Mesh for 468-point facial landmark detection and EAR calculation.\n● Built multi-threshold alert system for driver safety monitoring."
+                    },
+                    {
+                        title: "Object Detection Developer",
+                        company: "Smart Parking Slot Detection",
+                        period: "August 2025 - September 2025",
+                        description: "● Developed AI-based smart parking slot detection system using real-time video processing to monitor space availability.\n● Trained YOLOv8 object detection model for parking slot classification using custom datasets on Roboflow.\n● Implemented real-time inference deployment for live camera feed processing."
+                    }
+                ],
+                skills: [
+                    { name: "Programming: Python, C++, Microsoft Excel, Microsoft Word", level: 85 },
+                    { name: "Tech: Machine Learning, Computer Vision, FastAPI, WebSocket, YOLOv8", level: 82 },
+                    { name: "Soft Skills: Public Speaking, Problem Solving, Teamwork, Time Management", level: 90 },
+                    { name: "Language: Indonesian (Fluent), English (Proficient)", level: 85 }
+                ],
+                projects: [
+                    {
+                        name: "Drowsiness Detection System",
+                        description: "CNN-based classification system using MediaPipe and EAR for real-time driver safety monitoring.",
+                        tech: ["OpenCV", "MediaPipe", "CNN", "EfficientNetB0"]
+                    },
+                    {
+                        name: "CarryMate Vision Server",
+                        description: "High-performance WebSocket-based vision server for real-time robot control and telemetry tracking.",
+                        tech: ["FastAPI", "WebSocket", "Raspberry Pi", "Arduino"]
+                    },
+                    {
+                        name: "Smart Parking Slot Detection",
+                        description: "Real-time parking occupancy monitoring using YOLOv8 and automated status updates.",
+                        tech: ["YOLOv8", "Roboflow", "Computer Vision"]
+                    },
+                    {
+                        name: "Leaf Recognition System",
+                        description: "AI-based system for specimen identification and classification.",
+                        tech: ["Computer Vision", "AI"]
+                    }
+                ],
+                achievements: [
+                ],
+                social: { github: "", linkedin: "" }
             },
         ],
     },
