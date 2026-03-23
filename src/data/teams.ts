@@ -1685,7 +1685,7 @@ export const teams: Team[] = [
                 slug: "nizar",
                 name: "Nizar Abdul Malik",
                 photo: "/members/nizar.jpg",
-                role: "Mobile App & Control Developer",
+                role: "AI Engineer & Hardware Developer",
                 status: "ACTIVE",
                 email: "nizar.abdul@mhs.itenas.ac.id",
                 phone: "+62 895 1991 3802",
@@ -1756,112 +1756,193 @@ export const teams: Team[] = [
         fullName: "Smart Retail System",
         logo: "/logos/vending-machine.png",
         category: "IoT & AI",
-        description: "Student entrepreneurship training system with automation, QRIS/Virtual Account payments, and integrated web dashboard. Features stock monitoring and product sales analytics for MSMEs.",
-        longDescription: "The Vending Machine project is a student entrepreneurship training system featuring automation, QRIS/Virtual Account payments, and an integrated web dashboard. It includes stock monitoring and product sales analytics designed specifically for MSMEs.",
+        description: "Manage and develop local MSMEs using automation, digital payments, and data analysis through an integrated website, implemented in a medical items vending machine system. It promotes entrepreneurship by improving operational efficiency, stock monitoring, and market expansion through data-driven sales analysis.",
+        longDescription: "Manage and develop local MSMEs using automation, digital payments, and data analysis through an integrated website, implemented in a medical items vending machine system. It promotes entrepreneurship by improving operational efficiency, stock monitoring, and market expansion through data-driven sales analysis.",
         members: [
             {
-                slug: "erlangga",
-                name: "Erlangga Dwi",
-                photo: "/members/erlangga.jpg",
-                role: "Team Leader & IoT Business Integrator",
+                slug: "zulfan",
+                name: "Muhammad Zulfan Anggadhiputra",
+                photo: "/members/zulfan.png",
+                role: "Team Leader & Software Developer",
                 status: "ACTIVE",
-                email: "erlangga@mhs.itenas.ac.id",
-                phone: "+62 812 8888 0001",
-                location: "Bandung, Indonesia",
-                bio: "Leading the Vending Machine team in creating smart retail solutions for MSMEs.",
-                shortDesc: "Leading smart vending machine development.",
-                tags: ["IoT", "Business", "Automation"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.78/4.00" }],
+                email: "zulfanangga2908@gmail.com",
+                phone: "+6285156927928",
+                location: "Bandung, Jawa Barat, Indonesia",
+                bio: "A committed Informatics undergraduate with a deep enthusiasm for ongoing learning and the exploration of emerging technologies. Skilled in software development, database programming, and multimedia applications. Actively pursues opportunities to expand knowledge, embraces new challenges, and is eager to acquire new skills while contributing to meaningful technology solutions.",
+                shortDesc: "A committed Informatics undergraduate with a deep enthusiasm for ongoing learning and the exploration of emerging technologies. Skilled in software development, database programming, and multimedia applications. Actively pursues opportunities to expand knowledge, embraces new challenges, and is eager to acquire new skills while contributing to meaningful technology solutions.",
+                tags: ["Software Development", "Database Programming", "Multimedia", "Flutter", "Security"],
+                education: [
+                    { degree: "Undergraduate (Informatics)", institution: "Institut Teknologi Nasional Bandung", year: "2022 - Present", gpa: "3.34" },
+                    { degree: "High School (Natural Sciences)", institution: "SMAN 1 Batujajar", year: "2016 - 2019", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Team Leader & IoT Business Integrator", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin perancangan purwarupa otomasi mesin penjual otomatis cerdas dengan integrasi kapabilitas bisnis." }, { title: "Vending Machine Team Leader", company: "I-WILL Laboratory", period: "2024 - Present", description: "Leading smart vending machine development." }],
-                skills: [{ name: "Project Management", level: 85 }, { name: "Python", level: 82 }, { name: "IoT", level: 80 }, { name: "Business", level: 78 }],
-                projects: [{ name: "Smart Vending v1.0", description: "Vending machine with payment integration", tech: ["Arduino", "Servo", "LCD"] }],
-                achievements: ["Vending Machine Team Leader", "Student Entrepreneurship Award"],
-                social: { github: "https://github.com/erlangga", linkedin: "https://linkedin.com/in/erlangga" },
+                    {
+                        title: "Database Programming Laboratory Assistant",
+                        company: "ITENAS",
+                        period: "September 2024 - January 2025",
+                        description: "● Served as instructor for introductory database concept and application development.\n● Guided students to design, implement and integrate databases into real-world applications using Delphi7."
+                    },
+                    {
+                        title: "Mobile App Developer",
+                        company: "Geffen Earthquake",
+                        period: "September 2024 - January 2025",
+                        description: "● Developed and deployed a mobile application using Flutter and Firebase for real-time earthquake monitoring.\n● Engineered an intuitive and engaging UI/UX utilizing Flutter's widget-based architecture."
+                    },
+                    {
+                        title: "Multimedia Developer",
+                        company: "ASEAN Map Project",
+                        period: "September 2024 - January 2025",
+                        description: "● Developed an interactive educational multimedia application for ASEAN countries using ActionScript.\n● Programmed interactive navigation, exploration, and quiz features to enhance educational engagement."
+                    }
+                ],
+                skills: [
+                    { name: "Technical: MySQL, Java, Python, C, JavaScript, NodeJS, Huawei Firewall, Flutter", level: 85 },
+                    { name: "Tools: VS Code, Arduino, Power BI, IntelliJ, Katalon, Selenium, Figma, Delphi7", level: 88 },
+                    { name: "OS: Windows, RedHat, Ubuntu, MikroTik", level: 82 },
+                    { name: "Language: Indonesian (Native), English (Intermediate)", level: 85 }
+                ],
+                projects: [
+                    {
+                        name: "Geffen Earthquake",
+                        description: "Real-time earthquake monitoring mobile application with emergency contact storage.",
+                        tech: ["Flutter", "Firebase"]
+                    },
+                    {
+                        name: "Interactive Multimedia - ASEAN Map",
+                        description: "Educational application with interactive elements and quiz modules for regional geography.",
+                        tech: ["ActionScript", "Multimedia"]
+                    },
+                    {
+                        name: "Chess Piece Classification",
+                        description: "Classification system using Histogram of Oriented Gradients (HOG) with 93.33% accuracy.",
+                        tech: ["Python", "HOG", "AI"]
+                    }
+                ],
+                achievements: [
+
+                ],
+                social: { github: "", linkedin: "" }
             },
             {
-                slug: "zulfan",
-                name: "Muhammad Zulfan",
-                photo: "/members/zulfan.png",
-                role: "Payment Systems Engineer",
+                slug: "erlangga",
+                name: "Erlangga Dwi Kusuma Putra",
+                photo: "/members/erlangga.jpg",
+                role: "Hardware Developer & IoT Developer",
                 status: "ACTIVE",
-                email: "zulfan@mhs.itenas.ac.id",
-                phone: "+62 812 8888 0002",
+                email: "anggaerlangga108@gmail.com",
+                phone: "+62895606178691",
                 location: "Bandung, Indonesia",
-                bio: "Working on payment integration for the vending machine.",
-                shortDesc: "Integrating payment systems for vending machine.",
-                tags: ["Payment", "API", "FinTech"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.72/4.00" }],
-                experience: [
-                    { title: "Payment Systems Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengimplementasikan gateway pembayaran QRIS, Virtual Account, dan Node.js API pada Vending Machine." },
-                    { title: "Vending Machine Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Payment integration development." },
-                    { title: "Software Development Intern", company: "PT Dwi Purwa Teknologi", period: "Jul 2025 - Sep 2025", description: "R&D of digital solutions, feature implementation, and performance testing." },
-                    { title: "Database & OOP Lab Assistant", company: "ITENAS", period: "Mar 2024 - Jan 2025", description: "Instructor for database concepts, Delphi-7, and Java OOP principles." }
+                bio: "I am interested in pursuing an opportunity as a Network Engineer and IoT Developer because I have a strong passion for building connected systems and bridging the gap between physical hardware and digital networks. During my studies in Informatics, I have developed a solid foundation in network architecture, microcontroller programming (ESP32/Arduino), and cloud computing through various academic and personal projects. Through this opportunity, I aim to deepen my technical skills in scalable IoT infrastructures, learn industry-standard network protocols, and enhance my problem-solving abilities. This experience will prepare me to grow into a professional engineer who can contribute meaningfully to the development of high-quality, smart, and automated systems.",
+                shortDesc: "I am interested in pursuing an opportunity as a Network Engineer and IoT Developer because I have a strong passion for building connected systems and bridging the gap between physical hardware and digital networks. During my studies in Informatics, I have developed a solid foundation in network architecture, microcontroller programming (ESP32/Arduino), and cloud computing through various academic and personal projects.",
+                tags: ["Network Engineering", "IoT Development", "Cloud Computing", "Network Architecture"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - Present", gpa: "3.5" },
+                    { degree: "Vocational Highschool in Network Engineer", institution: "SMKN 2 Bandung", year: "2020 - 2023", gpa: "-" }
                 ],
-                skills: [{ name: "Payment APIs", level: 85 }, { name: "Node.js", level: 82 }, { name: "QRIS", level: 80 }, { name: "Security", level: 78 }],
-                projects: [{ name: "QRIS Payment", description: "QRIS payment integration", tech: ["Node.js", "QRIS API", "QR Code"] }],
-                achievements: ["Vending Machine Team Member"],
-                social: { github: "https://github.com/zulfan", linkedin: "https://linkedin.com/in/zulfan" },
+                experience: [
+                    {
+                        title: "IoT Developer Internship",
+                        company: "Diskominfo Jabar",
+                        period: "2025 - present",
+                        description: "● Developed end-to-end IoT solutions for real-time monitoring and smart office applications using MQTT and HTTP.\n● Designed power-efficient circuits for battery-operated sensor nodes and managed OTA updates for remote firmware stability."
+                    },
+                    {
+                        title: "Hardware Developer & Suit Design",
+                        company: "Yamaha Safety Training Project",
+                        period: "2025 - present",
+                        description: "● Designed and engineered wearable hardware (Suit) integrating sensors and actuators using ESP32/Arduino.\n● Created circuit schematics and managed electronic wiring for hardware-software synchronization in digital simulations."
+                    },
+                    {
+                        title: "Network Infrastructure Engineer Internship",
+                        company: "Diskominfo Jabar",
+                        period: "January 2022 - June 2022",
+                        description: "● Monitored LAN/wireless infrastructures and conducted troubleshooting on routers and switches for high-speed connectivity.\n● Configured network security protocols and bandwidth management to optimize system performance."
+                    }
+                ],
+                skills: [
+                    { name: "Technical: Microcontroller Programming (ESP32/Arduino), Sensor Integration, System Architecture", level: 90 },
+                    { name: "Infrastructure: Network Infrastructure, Wireless Protocols, IoT Protocols (MQTT/HTTP)", level: 88 },
+                    { name: "Soft Skills: Teamwork, Problem-solving, Time Management, Adaptability", level: 92 }
+                ],
+                projects: [
+                    {
+                        name: "Vending Machine - Smart Retail System",
+                        description: "Leading the development of a smart retail system with IoT integration and automated components.",
+                        tech: ["Arduino", "IoT", "Automation"]
+                    },
+                    {
+                        name: "VR-Based Safety Training Suit",
+                        description: "Wearable hardware integration with sensors and ESP32 for low-latency digital simulation synchronization.",
+                        tech: ["ESP32", "Arduino", "Bluetooth", "Wi-Fi"]
+                    },
+                    {
+                        name: "Smart Electric Drum Research",
+                        description: "Research and architectural analysis of a Smart Electric Drum system for scientific publication.",
+                        tech: ["Research", "Architecture"]
+                    }
+                ],
+                achievements: [
+                    "1st Winner Best of the Best Scientific Writing (2024)",
+                    "Participant Lintas Ormawa - Universitas Negeri Malang"
+                ],
+                social: { github: "", linkedin: "" }
             },
             {
                 slug: "dedrick",
                 name: "Mohamad Dedrick Finnegan",
-                photo: "/members/dedrick.png",
-                role: "Hardware & Dispensing Engineer",
+                photo: "#",
+                role: "Hardware Developer & IoT Developer",
                 status: "ACTIVE",
                 email: "dedrick@mhs.itenas.ac.id",
                 phone: "+62 812 8888 0003",
                 location: "Bandung, Indonesia",
-                bio: "Building the hardware and dispensing mechanisms for the vending machine.",
-                shortDesc: "Designing hardware and dispensing systems.",
+                bio: "Profile information is currently unavailable.",
+                shortDesc: "Profile information is currently unavailable.",
                 tags: ["Hardware", "Mechanics", "Arduino"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.70/4.00" }],
-                experience: [
-                    { title: "Hardware & Dispensing Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Menangani mekanika dispenser, motor servo/stepper, dan perancangan sirkuit Arduino pada Vending Machine." }, { title: "Vending Machine Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Hardware and mechanical development." }],
-                skills: [{ name: "Arduino", level: 88 }, { name: "Servo/Motor", level: 85 }, { name: "Sensors", level: 82 }, { name: "Mechanical", level: 80 }],
-                projects: [{ name: "Dispensing System", description: "Product dispensing mechanism", tech: ["Servo", "DC Motor", "Arduino"] }],
-                achievements: ["Vending Machine Team Member"],
-                social: { github: "https://github.com/dedrick", linkedin: "https://linkedin.com/in/dedrick" },
+                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "-" }],
+                experience: [],
+                skills: [{ name: "Indonesian (Native)", level: 100 }],
+                projects: [],
+                achievements: [],
+                social: { github: "", linkedin: "" },
             },
             {
                 slug: "faiz",
                 name: "Faiz Fazdlih Dwi",
-                photo: "/members/faiz.png",
-                role: "Web Dashboard Developer",
+                photo: "#",
+                role: "Hardware Developer & IoT Developer",
                 status: "ACTIVE",
                 email: "faiz@mhs.itenas.ac.id",
                 phone: "+62 812 8888 0004",
                 location: "Bandung, Indonesia",
-                bio: "Developing the web dashboard for vending machine monitoring and analytics.",
-                shortDesc: "Building web dashboard and analytics.",
+                bio: "Profile information is currently unavailable.",
+                shortDesc: "Profile information is currently unavailable.",
                 tags: ["React", "Node.js", "Dashboard"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.76/4.00" }],
-                experience: [
-                    { title: "Web Dashboard Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun dasbor antarmuka analitik web menggunakan React dan integrasi basis data pada Vending Machine." }, { title: "Vending Machine Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Dashboard and analytics development." }],
-                skills: [{ name: "React", level: 85 }, { name: "Node.js", level: 82 }, { name: "MongoDB", level: 80 }, { name: "Tailwind", level: 85 }],
-                projects: [{ name: "Admin Dashboard", description: "Vending machine management dashboard", tech: ["React", "Node.js", "MongoDB"] }],
-                achievements: ["Vending Machine Team Member"],
-                social: { github: "https://github.com/faiz", linkedin: "https://linkedin.com/in/faiz" },
+                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "-" }],
+                experience: [],
+                skills: [{ name: "Indonesian (Native)", level: 100 }],
+                projects: [],
+                achievements: [],
+                social: { github: "", linkedin: "" },
             },
             {
                 slug: "riza",
                 name: "Riza Maulana",
-                photo: "/members/riza.png",
-                role: "IoT Cloud & MQTT Integrator",
+                photo: "#",
+                role: "Software Developer",
                 status: "ACTIVE",
                 email: "riza@mhs.itenas.ac.id",
                 phone: "+62 812 8888 0005",
                 location: "Bandung, Indonesia",
-                bio: "Working on IoT connectivity and cloud integration for the vending machine.",
-                shortDesc: "Connecting hardware to cloud systems.",
+                bio: "Profile information is currently unavailable.",
+                shortDesc: "Profile information is currently unavailable.",
                 tags: ["IoT", "MQTT", "Cloud"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.72/4.00" }],
-                experience: [
-                    { title: "IoT Cloud & MQTT Integrator", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun gateway telemetri dan integrasi protokol MQTT antara perangkat keras dan cloud layanan Vending Machine." }, { title: "Vending Machine Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "IoT and cloud integration." }],
-                skills: [{ name: "MQTT", level: 85 }, { name: "ESP32", level: 82 }, { name: "AWS IoT", level: 78 }, { name: "Python", level: 80 }],
-                projects: [{ name: "IoT Gateway", description: "Cloud connectivity for vending machine", tech: ["ESP32", "MQTT", "WiFi"] }],
-                achievements: ["Vending Machine Team Member"],
-                social: { github: "https://github.com/riza", linkedin: "https://linkedin.com/in/riza" },
+                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "-" }],
+                experience: [],
+                skills: [{ name: "Indonesian (Native)", level: 100 }],
+                projects: [],
+                achievements: [],
+                social: { github: "", linkedin: "" },
             },
         ],
     },
