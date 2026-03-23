@@ -499,110 +499,166 @@ export const teams: Team[] = [
         slug: "smart-train",
         name: "Smart Train Simulator",
         fullName: "AI-Powered Railway Simulation System",
-        logo: "/logos/smart-train.png",
+        logo: "/logos/smartTrain.png",
         category: "AI & Computer Vision",
-        description: "Transforming rail travel with AI and computer vision. Analyzes surroundings in real time to improve safety and efficiency through obstacle detection, infrastructure monitoring, and adaptive performance.",
-        longDescription: "Smart Train Simulator is transforming rail travel with AI and computer vision technology. The system analyzes surroundings in real time to improve safety and efficiency through obstacle detection, infrastructure monitoring, and adaptive performance adjustments.",
+        description: "SmartTrain is an automated miniature train project. It uses AI technology to detect vehicles and automatically manage crossing barriers and live cameras in real-time, improving safety and efficiency at railway crossings.",
+        longDescription: "SmartTrain is an automated miniature train project. It uses AI technology to detect vehicles and automatically manage crossing barriers and live cameras in real-time, improving safety and efficiency at railway crossings.",
         members: [
             {
                 slug: "hasby",
-                name: "Muhammad Hasby A",
+                name: "Muhammad Hasby As-Shiddiqy",
                 photo: "/members/hasby.png",
-                role: "Team Leader & AI System Designer",
+                role: "Team Leader",
                 status: "ACTIVE",
-                email: "hasby@mhs.itenas.ac.id",
-                phone: "+62 812 2222 0001",
+                email: "by1frost.business@gmail.com",
+                phone: "+6285174370106",
                 location: "Bandung, Indonesia",
-                bio: "Dedicated Computer Science student experienced in leading technical projects from planning to implementation. Skilled in digital image processing and computer vision algorithms using Python for intelligent systems, and comfortable mentoring and troubleshooting in laboratory environments.",
-                shortDesc: "Computer vision-focused Informatics student leading AI and embedded projects.",
-                tags: ["Computer Vision", "Digital Image Processing", "AI", "Technical Leadership"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.70/4.00" }],
+                bio: "Dedicated Computer Science Student experienced in leading technical projects from planning to implementation. Skilled in Digital Image Processing and designing efficient Computer Vision algorithms using Python for intelligent systems. Combines rigorous mathematical understanding with effective communication skills, fully prepared to mentor students and troubleshoot technical issues in a laboratory environment.",
+                shortDesc: "A dynamic, adaptive individual passionate about developing technology-based solutions. Has a strong interest in IoT and Data Science, actively seeking opportunities to implement innovative ideas into actual practice.",
+                tags: ["IoT", "Data Science", "Technology Development", "Innovation"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.70/4.00" },
+                    { degree: "High School Diploma (Bilingual/Science)", institution: "SMA Laboratorium Percontohan UPI", year: "2020 - 2023", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Team Leader & AI System Designer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin Smart Train Simulator dan merekayasa arsitektur AI deteksi objek cerdas." },
                     {
-                        title: "Smart Train Team Leader",
-                        company: "I-WILL Laboratory",
-                        period: "2025 - Present",
-                        description: "Memimpin tim miniatur SmartTrain berbasis IoT dan AI dengan ESP32, deteksi kendaraan dengan YOLO, dan kontrol palang via MQTT/HTTP."
+                        title: "Member / SmartTrain Project Lead",
+                        company: "Innovative Workingspace Integrated Living Laboratory (I-WILL)",
+                        period: "April 2025 - Present",
+                        description: "● Led 6 people and architected a SmartTrain Miniature Project. An IoT-based embedded solution integrating ESP32 microcontrollers, AI-powered vehicle detection (YOLO), and real-time barrier control via MQTT/HTTP."
                     },
                     {
-                        title: "Member of I-WILL Laboratory",
-                        company: "I-WILL",
-                        period: "2025 - Present",
-                        description: "Aktif mengembangkan proyek-proyek AI dan embedded seperti KainVision dan SmartTrain."
+                        title: "Publication and Documentation",
+                        company: "INKU Itenas",
+                        period: "2024 - Present",
+                        description: "● Created promotional posters and documented events organized by INKU."
+                    },
+                    {
+                        title: "Member of Robotics Extracurricular",
+                        company: "SMA Laboratorium Percontohan UPI",
+                        period: "2021 - 2022",
+                        description: "● Participated in unique IoT learning activities and STEM Center activities building RC car frames."
+                    },
+                    {
+                        title: "Member of Music Extracurricular",
+                        company: "SMA Laboratorium Percontohan UPI",
+                        period: "2021 - 2022",
+                        description: "● Participated in music training for playing the piano."
                     }
                 ],
                 skills: [
-                    { name: "Python", level: 90 },
-                    { name: "TensorFlow / PyTorch / scikit-learn", level: 88 },
-                    { name: "OpenCV / scikit-image", level: 86 },
-                    { name: "React.js / Express.js / Tailwind CSS", level: 82 },
-                    { name: "MySQL / MongoDB", level: 80 },
+                    { name: "Programming: Python, JavaScript, Java, SQL, C++", level: 0 },
+                    { name: "Frameworks: TensorFlow, PyTorch, scikit-learn, OpenCV, React.js", level: 0 },
+                    { name: "Databases: MySQL, MongoDB", level: 0 },
+                    { name: "Tools: Git, GitHub, Figma, Google Colab, Kaggle", level: 0 },
+                    { name: "Soft Skills: Leadership, Analytical Thinking, Mentoring, Problem Solving", level: 0 }
                 ],
                 projects: [
-                    { name: "KainVision – Fabric Type Classification", description: "Klasifikasi jenis kain menggunakan fitur tekstur (GLCM, LBP, Gabor) dan warna dengan Random Forest, SVM, serta KNN, dilengkapi GUI Tkinter.", tech: ["Python", "scikit-learn", "OpenCV", "Tkinter"] },
-                    { name: "Car Obstacle Detection Mobile", description: "Sistem keselamatan kendaraan real-time di Android menggunakan Kotlin dan TensorFlow Lite dengan model YOLOv5su terkuantisasi.", tech: ["Kotlin", "TensorFlow Lite", "OpenCV"] },
-                    { name: "ForUStudio", description: "Full-stack platform manajemen proyek kreatif dengan ticketing, file management, pembayaran, dan RBAC.", tech: ["JavaScript", "Express.js", "React.js", "MongoDB"] },
-                    { name: "Itenas Youth Innovation Platform (IYIP)", description: "Platform manajemen aktivitas akademik kampus dengan event, jurnal, komunitas, dan workflow persetujuan.", tech: ["JavaScript", "Express.js", "React.js", "MongoDB"] },
+                    {
+                        name: "KainVision – Fabric Type Classification",
+                        description: "Built an end-to-end image classification pipeline to identify fabric types using classical computer vision techniques. Evaluated Random Forest, SVM, and KNN classifiers, and implemented a Tkinter desktop GUI for real-time fabric prediction.",
+                        tech: ["Python", "scikit-learn", "OpenCV", "scikit-image"]
+                    },
+                    {
+                        name: "Car Obstacle Detection Mobile",
+                        description: "Developed a real-time Android vehicle safety system using Kotlin and TensorFlow Lite, integrating a quantized YOLOv5su model and OpenCV-based focal length distance estimation.",
+                        tech: ["Kotlin", "TensorFlow Lite", "YOLOv5su", "OpenCV"]
+                    },
+                    {
+                        name: "ForUStudio Platform",
+                        description: "Full-Stack Web Application for creative project management. Features include a ticketing system, project file management, multi-method payment processing, and role-based access control (RBAC).",
+                        tech: ["JavaScript", "Express.js", "React.js", "MongoDB"]
+                    },
+                    {
+                        name: "Itenas Youth Innovation Platform (IYIP)",
+                        description: "Full-Stack Web Application for academic management. Features include event management, digital journal publication, community groups, and an approval workflow with JWT authentication.",
+                        tech: ["JavaScript", "Express.js", "React.js", "MongoDB"]
+                    },
+                    {
+                        name: "Weather Monitoring System",
+                        description: "Developed a microcontroller-based weather monitoring system to measure wind speed and direction in real-time, utilizing time-based logic and data visualization on a 16x2 LCD interface.",
+                        tech: ["C++", "Microcontroller", "Sensors"]
+                    }
                 ],
                 achievements: [
-                    "Smart Train Team Leader",
-                    "Participant - Data Science Bootcamp (Dibimbing DSF 36)",
-                    "Participant - Codespace Machine Learning Bootcamp"
+                    "Dibimbing Indonesia - dibimbing.id DSF 36 “Data Science” (Online Bootcamp, 2025)",
+                    "Codespace Itenas - Codespace Batch 2.0 \"Machine Learning\" (Campus Bootcamp, 2024)"
                 ],
-                social: { github: "https://github.com/hasby", linkedin: "https://linkedin.com/in/hasby" },
+                social: { github: "https://github.com/hasbyas1", linkedin: "https://linkedin.com/in/hasbyas1", web: "", instagram: "https://instagram.com/runosby1_" }
             },
             {
                 slug: "hickham",
-                name: "Hickham Amwala K",
+                name: "Hickham Amwala Koswara",
                 photo: "/members/hickham.jpg",
-                role: "3D Mechanical Designer",
+                role: "Drafter",
                 status: "ACTIVE",
-                email: "hickham@mhs.itenas.ac.id",
-                phone: "+62 812 2222 0002",
+                email: "hickham04@gmail.com",
+                phone: "+6283195907673",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with a strong interest and experience in 3D parametric modeling for functional and technical components. Focused on precision modeling for prototyping and mechanical components with attention to manufacturability and structured design.",
-                shortDesc: "Informatics student specializing in precise 3D parametric modeling for mechanical components.",
-                tags: ["3D Modeling", "Parametric Design", "Prototyping"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "" }],
+                bio: "Has an interest and experience in parametric-based 3D design for the development of technical and functional objects. Accustomed to arranging precision models for prototyping and mechanical component needs, with a structured and optimizable design approach. A commitment to accuracy, design efficiency, and manufacturing readiness is the main focus in every design process.",
+                shortDesc: "Has an interest and experience in parametric-based 3D design for the development of technical and functional objects. Accustomed to arranging precision models for prototyping and mechanical component needs, with a structured and optimizable design approach. A commitment to accuracy, design efficiency, and manufacturing readiness is the main focus in every design process.",
+                tags: ["3D Modeling", "Parametric Design", "Prototyping", "Technical Design"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "-" }
+                ],
                 experience: [
-                    { title: "3D Mechanical Designer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memodelkan komponen mekanikal presisi 3D untuk Smart Train Simulator." },
                     {
-                        title: "3D Modeling for Academic Projects",
-                        company: "ITENAS",
+                        title: "Technical Experience: 3D Design of Functional Components",
+                        company: "-",
                         period: "2025 - Present",
-                        description: "Membuat desain 3D komponen mekanikal dan struktural, melakukan iterasi desain, dan mendokumentasikan hasil sebagai laporan teknis."
+                        description: "● Created 3D designs for mechanical and structural components for academic assignments and prototype development.\n● Iterated designs based on evaluations of function, precision, and ease of assembly.\n● Integrated 3D designs with 3D printing processes to validate form and function.\n● Documented design results as part of technical reports and project presentations."
+                    },
+                    {
+                        title: "Training & Development",
+                        company: "-",
+                        period: "-",
+                        description: "● Self-learning in 3D design and modeling for academic needs and functional component development.\n● Explored parametric design techniques, prototyping, and design validation through university assignments.\n● Developed technical design skills outside the formal curriculum through continuous practice and self-study.\n● Applied a problem-solving approach in adapting designs to functional needs and manufacturing constraints."
                     }
                 ],
                 skills: [
-                    { name: "3D Mechanical Design", level: 85 },
-                    { name: "Parametric Modeling", level: 82 },
-                    { name: "3D Printing Prototyping", level: 80 },
-                    { name: "Technical Documentation", level: 78 },
+                    { name: "3D Modeling for Academic Projects", level: 0 },
+                    { name: "Basic Mechanical Component Design", level: 0 },
+                    { name: "Parametric Design", level: 0 },
+                    { name: "Prototyping Using 3D Printing", level: 0 },
+                    { name: "Technical Documentation and Presentation", level: 0 }
                 ],
                 projects: [],
-                achievements: ["Smart Train Team Member"],
-                social: { github: "https://github.com/hickham", linkedin: "https://linkedin.com/in/hickham" },
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" }
             },
             {
                 slug: "eka",
-                name: "Eka Fajar R",
+                name: "Eka Fajar Rahmansyah",
                 photo: "/members/eka.JPG",
                 role: "Embedded Hardware Engineer",
                 status: "ACTIVE",
-                email: "eka.fajar@mhs.itenas.ac.id",
-                phone: "+62 812 2222 0003",
-                location: "Bandung, Indonesia",
-                bio: "Working on embedded systems and hardware integration for Smart Train Simulator.",
-                shortDesc: "Integrating hardware and embedded systems for railway simulation.",
-                tags: ["Embedded", "IoT", "Hardware"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.70/4.00" }],
+                email: "ekahr8@gmail.com",
+                phone: "+6285156441077",
+                location: "Kp. Babakan Pandan, Ds. Cimekar, Kec. Cileunyi",
+                bio: "An active Mechanical Engineering student at Itenas Bandung with organizational experience, possessing leadership, communication, teamwork, and problem-solving skills, ready to contribute positively in both academic and professional environments.",
+                shortDesc: "An active Mechanical Engineering student at Itenas Bandung with organizational experience, possessing leadership, communication, teamwork, and problem-solving skills, ready to contribute positively in both academic and professional environments.",
+                tags: ["Mechanical Engineering", "Automotive", "Problem Solving", "Team Leadership"],
+                education: [
+                    { degree: "Bachelor of Mechanical Engineering", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "-" },
+                    { degree: "High School Equivalent (Automotive Light Vehicle Engineering)", institution: "SMK Bandung Timur", year: "2020 - 2023", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Embedded Hardware Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Merancang dan mengintegrasikan sensor Raspberry Pi/Arduino pada Smart Train Simulator." }, { title: "Smart Train Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Hardware and embedded systems development." }],
-                skills: [{ name: "Arduino", level: 85 }, { name: "Python", level: 80 }, { name: "Raspberry Pi", level: 78 }, { name: "Sensors", level: 75 }],
-                projects: [{ name: "Hardware Module", description: "Embedded systems for train simulation", tech: ["Arduino", "Raspberry Pi", "Sensors"] }],
-                achievements: ["Smart Train Team Member"],
-                social: { github: "https://github.com/eka", linkedin: "https://linkedin.com/in/eka" },
+                    {
+                        title: "Industrial Work Practice",
+                        company: "Kondang Jaya Motor Workshop",
+                        period: "January 2022 - March 2022",
+                        description: "● Performed periodic maintenance on engines and workshop tools.\n● Ensured the availability of spare parts in the workshop was always controlled.\n● Performed tune-ups and overhauls on vehicles."
+                    }
+                ],
+                skills: [
+                    { name: "Teamwork", level: 0 },
+                    { name: "Public Speaking", level: 0 },
+                    { name: "Problem Solving", level: 0 },
+                    { name: "DSLR/Mirrorless Camera Mastery", level: 0 }
+                ],
+                projects: [],
+                achievements: [],
+                social: { github: "", linkedin: "", web: "", instagram: "https://instagram.com/ekafjar_" }
             },
         ],
     },
