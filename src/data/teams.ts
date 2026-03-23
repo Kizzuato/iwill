@@ -976,7 +976,7 @@ export const teams: Team[] = [
         logo: "/logos/donimal.png",
         category: "Educational IoT",
         description: "DONIMAL is an interactive IoT-based educational doll that uses RFID and audio to support children’s development in a fun way. It is designed to create an engaging learning experience by allowing children to interact with physical cards or objects that trigger specific sounds, stories, or educational content. By combining technology with play, DONIMAL encourages cognitive growth, language development, and curiosity while maintaining a safe and child-friendly environment.",
-        longDescription: "DONIMAL is an interactive IoT-based educational doll that uses RFID and audio to support children’s development in a fun way. It is designed to create an engaging learning experience by allowing children to interact with physical cards or objects that trigger specific sounds, stories, or educational content. By combining technology with play, DONIMAL encourages cognitive growth, language development, and curiosity while maintaining a safe and child-friendly environment.",
+        longDescription: "DONIMAL is an interactive IoT-based educational doll that uses RFID and audio to support children’s development in a fun way. It is designed to create an engaging learning experience by allowing children to interact with physical cards or objects that trigger specific sounds, stories, or educational content.",
         members: [
             {
                 slug: "ikrima",
@@ -1104,109 +1104,175 @@ export const teams: Team[] = [
         fullName: "Intelligent Weather Monitoring",
         logo: "/logos/skysense.png",
         category: "IoT",
-        description: "Intelligent weather monitoring system providing real-time data on temperature, humidity, rainfall, wind speed, and light intensity. Future plans include AI predictions and disaster warning systems.",
-        longDescription: "SkySense is an intelligent weather monitoring system providing real-time data on temperature, humidity, rainfall, wind speed, and light intensity. Future development plans include AI-powered predictions and disaster warning systems.",
+        description: "Empowering smarter environmental monitoring with real-time weather intelligence. From today’s data collection to tomorrow’s AI-powered predictions and disaster prevention systems, Skysense aims to make the environment more understandable and safer for everyone.",
+        longDescription: "Empowering smarter environmental monitoring with real-time weather intelligence. From today’s data collection to tomorrow’s AI-powered predictions and disaster prevention systems, Skysense aims to make the environment more understandable and safer for everyone.",
         members: [
             {
                 slug: "rida",
-                name: "Rida",
+                name: "Rida Rahmaniah El Sya’bani",
                 photo: "/members/rida.png",
-                role: "Team Leader & Data Analyst",
+                role: "Team Leader & Hardware Developer",
                 status: "ACTIVE",
-                email: "rida@mhs.itenas.ac.id",
-                phone: "+62 812 6666 0001",
+                email: "rida.rahmaniah@mhs.itenas.ac.id",
+                phone: "+6289636510501",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student interested in digital image processing and programming, with experience in basic image processing techniques such as grayscale, histogram, filtering, edge detection, and transformations.",
-                shortDesc: "Informatics student focusing on digital image processing and IoT projects.",
-                tags: ["Digital Image Processing", "Python", "IoT"],
+                bio: "Informatics student with a keen interest in digital image processing and programming. Experienced in image processing using basic techniques such as grayscale, histogram, filtering, edge detection, and image transformation. Disciplined, meticulous, communicative, and ready to support the smooth running of practical sessions as a Laboratory Assistant.",
+                shortDesc: "Informatics student with a keen interest in digital image processing and programming. Experienced in image processing using basic techniques such as grayscale, histogram, filtering, edge detection, and image transformation.",
+                tags: ["Image Processing", "Programming", "Python", "JavaScript"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - Present", gpa: "" },
-                    { degree: "High School (Science)", institution: "SMA Negeri 1 Soreang", year: "2020 - 2023", gpa: "" },
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "-" },
+                    { degree: "High School Diploma (Science)", institution: "SMA Negeri 1 Soreang", year: "2020-2023", gpa: "-" }
                 ],
                 experience: [
-                    { title: "Team Leader & Data Analyst", company: "I-WILL Laboratory", period: "2024 - Present", description: "Menganalisis hasil pembacaan cuaca, pengolahan citra prediktif, dan pemodelan pada SkySense." },],
+                    {
+                        title: "River Cleaner",
+                        company: "Advanced Algorithm Course Project",
+                        period: "Semester 2",
+                        description: "● Developed a river trash cleaning device as a major assignment."
+                    },
+                    {
+                        title: "Home Security Alarm",
+                        company: "Introduction to IoT Course Project",
+                        period: "Semester 2",
+                        description: "● Developed an IoT-based home security alarm system."
+                    }
+                ],
                 skills: [
-                    { name: "Python", level: 82 },
-                    { name: "JavaScript", level: 78 },
-                    { name: "HTML", level: 78 },
-                    { name: "C Language", level: 75 },
+                    { name: "Programming Languages: Python, C, HTML, PHP, Java (basic)", level: 0 },
+                    { name: "Tools: Visual Studio Code, Delphi 7, HeidiSQL, Raspberry Pi", level: 0 },
+                    { name: "Other: Microsoft Office (Word, Excel, PowerPoint)", level: 0 },
+                    { name: "Indonesian (Active)", level: 0 },
+                    { name: "English (Passive/Intermediate)", level: 0 }
                 ],
                 projects: [
-                    { name: "Pendeteksi Maling", description: "Proyek keamanan berbasis sensor untuk mendeteksi maling.", tech: ["IoT", "Sensors"] },
-                    { name: "River Cleaner", description: "Proyek pembersih sungai berbasis IoT.", tech: ["IoT", "Sensors"] },
-                    { name: "Aplikasi Rental Mobil", description: "Aplikasi rental mobil berbasis pemrograman.", tech: ["Programming"] },
-                    { name: "Website Pendidikan", description: "Website edukasi untuk pembelajaran.", tech: ["Web", "HTML", "CSS"] },
-                    { name: "Cookingkos Website", description: "Website resep masakan.", tech: ["Web"] },
-                    { name: "Keamanan Poliklinik", description: "Proyek keamanan poliklinik menggunakan pengolahan citra.", tech: ["Digital Image Processing"] },
-                    { name: "Klasifikasi Karat pada Drum", description: "Klasifikasi karat pada drum dengan teknik pengolahan citra.", tech: ["Digital Image Processing"] },
-                    { name: "Skysense", description: "Proyek monitoring cuaca berbasis IoT.", tech: ["IoT", "Sensors"] },
+                    { name: "Home Security Alarm / Thief Detector (Semester 2)", description: "An Introduction to IoT project functioning as a home security alarm system.", tech: [] },
+                    { name: "River Cleaner (Semester 2)", description: "River trash cleaning device, developed as a major assignment for the Advanced Algorithm course.", tech: [] },
+                    { name: "Car Rental Application (Semester 3)", description: "", tech: [] },
+                    { name: "Educational Website (Semester 3)", description: "", tech: [] },
+                    { name: "Cookingkos Website (Semester 4)", description: "", tech: [] },
+                    { name: "Polyclinic Security System (Semester 4)", description: "", tech: [] },
+                    { name: "Drum Rust Classification (Semester 4)", description: "", tech: [] },
+                    { name: "SkySense", description: "", tech: [] }
                 ],
-                achievements: ["SkySense Team Leader", "IoT Innovation Award"],
-                social: { github: "https://github.com/rida", linkedin: "https://linkedin.com/in/rida" },
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" }
             },
             {
                 slug: "angeline",
-                name: "Angeline",
+                name: "Angelina Geronsiana Yudrikewati",
                 photo: "/members/angel.jpg",
-                role: "IoT Hardware Interfacer",
+                role: "Software Developer",
                 status: "ACTIVE",
-                email: "angeline@mhs.itenas.ac.id",
-                phone: "+62 812 6666 0002",
+                email: "angelina.geronsiana@mhs.itenas.ac.id",
+                phone: "+6282237154719",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student at ITENAS with strong interest in Internet of Things (IoT) and embedded systems. Experienced in building microcontroller-based projects integrating sensors, actuators, and databases.",
-                shortDesc: "Informatics student building IoT systems and database-driven applications.",
-                tags: ["IoT", "Arduino", "Database", "Digital Image Processing"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "" }],
-                experience: [
-                    { title: "IoT Hardware Interfacer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengintegrasikan berbagai node sensor kelembapan dan sensor lingkungan mikrokontroler di SkySense." },],
+                bio: "An active Informatics student at ITENAS. Currently pursuing studies in Informatics with a strong interest in technology, particularly in the development of Internet of Things (IoT) devices.",
+                shortDesc: "An active Informatics student at ITENAS. Currently pursuing studies in Informatics with a strong interest in technology, particularly in the development of Internet of Things (IoT) devices.",
+                tags: ["IoT", "Database Development", "Computer Vision", "Multimedia"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung (ITENAS)", year: "2023 - Present", gpa: "-" }
+                ],
+                experience: [],
                 skills: [
-                    { name: "Python / C / PHP / Java (basic)", level: 78 },
-                    { name: "Arduino IDE / VSCode / XAMPP / HeidiSQL / Proteus / Delphi-7", level: 80 },
-                    { name: "Microsoft Office", level: 82 },
+                    { name: "Programming Languages: Python, C, PHP, Java (basic)", level: 0 },
+                    { name: "Tools: Arduino IDE, VSCode, HeidiSQL, XAMPP, Proteus, Delphi-7", level: 0 },
+                    { name: "Additional Skills: Microsoft Office (Word, Excel, PowerPoint)", level: 0 }
                 ],
                 projects: [
-                    { name: "Sistem Jemuran Pakaian Otomatis Terintegrasi Blynk", description: "Jemuran otomatis berbasis IoT dengan notifikasi hujan dan kontrol jemuran melalui aplikasi.", tech: ["Arduino", "Sensors", "Blynk"] },
-                    { name: "Aplikasi Peminjaman Buku", description: "Aplikasi desktop untuk manajemen peminjaman buku menggunakan Delphi-7.", tech: ["Delphi-7", "Database"] },
-                    { name: "Klasifikasi Sampah Plastik, Kertas, dan Organik", description: "Implementasi ekstraksi fitur visual dan klasifikasi sampah berdasarkan citra.", tech: ["Digital Image Processing"] },
-                    { name: "SkySense IoT Weather Monitoring", description: "Sistem monitoring dan prediksi cuaca lokal berbasis IoT untuk mendukung aktivitas pertanian.", tech: ["IoT", "Sensors"] },
-                    { name: "Real-Time Violence Detection Using MobileNetV2 and TSM", description: "Deteksi kekerasan real-time pada video pengawasan dengan notifikasi Telegram.", tech: ["MobileNetV2", "TSM", "Python"] },
-                    { name: "Pembelajaran Interaktif Tata Surya", description: "Aplikasi multimedia interaktif untuk pembelajaran tata surya.", tech: ["Multimedia", "Animation"] },
+                    {
+                        name: "Automatic Clothesline System Integrated with Blynk App",
+                        description: "A clothesline that utilizes Internet of Things (IoT) technology, weather sensors, and automatic control systems to automatically adjust its position based on detected weather conditions. When rain is detected, the system provides a notification to the user and automatically retracts the clothesline. Conversely, when the weather clears up, the user is notified that it is safe to hang clothes again.",
+                        tech: []
+                    },
+                    {
+                        name: "Book Borrowing Application Using Delphi7",
+                        description: "A desktop application designed to help manage library administration, including book data processing, user management, as well as borrowing and returning transactions. The system aims to improve efficiency, note-taking accuracy, and reduce errors that frequently occur in manual processes.",
+                        tech: []
+                    },
+                    {
+                        name: "Visual Extraction Implementation for Plastic, Paper, and Organic Waste Classification",
+                        description: "This visual extraction implementation aims to identify and classify plastic, paper, and organic waste based on visual image characteristics. The methods used include the extraction of color, shape, and texture features, which are then processed in the classification stage to automatically determine the type of waste.\nLink: https://youtu.be/23JD6Roh86I?si=fLqXnobCvTR1EC2O",
+                        tech: []
+                    },
+                    {
+                        name: "SkySense: IoT-Based Local Weather Monitoring and Prediction System",
+                        description: "This IoT-based local weather monitoring and prediction system aims to provide real-time weather information as well as short-term weather predictions that can be used as a basis for agricultural decision-making. The system utilizes environmental sensors and an IoT platform to collect, process, and display weather data in an integrated manner.",
+                        tech: []
+                    },
+                    {
+                        name: "Real-Time Violence Detection in Surveillance Video Using MobileNetV2 and TSM",
+                        description: "This research developed a real-time violence detection system for surveillance videos using MobileNetV2 and Temporal Shift Module (TSM). The system classifies fighting activities based on spatial and temporal features, implemented in a CPU-based real-time environment, and sends automatic notifications via Telegram bot when violence is detected to support security responses.",
+                        tech: []
+                    },
+                    {
+                        name: "Interactive Solar System Learning",
+                        description: "Interactive Solar System Exploration is an educational multimedia application designed to help the natural science learning process, specifically Solar System materials. This application presents visualizations of planets, orbits, rotation, and revolution in the form of interactive animations equipped with sound and user navigation. Through this learning media, students can understand Solar System concepts in a way that is more engaging, dynamic, and easier to comprehend compared to conventional learning methods.",
+                        tech: []
+                    }
                 ],
-                achievements: ["SkySense Team Member"],
-                social: { github: "https://github.com/angeline", linkedin: "https://linkedin.com/in/angeline" },
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" }
             },
             {
                 slug: "shafira-aprillia",
                 name: "Shafira Aprillia",
                 photo: "/members/shafira_aprilia.jpg",
-                role: "Web & AI Dashboard Developer",
+                role: "Software Developer",
                 status: "ACTIVE",
-                email: "shafira.aprillia@mhs.itenas.ac.id",
-                phone: "+62 812 6666 0003",
+                email: "shafiraaprillia572@gmail.com",
+                phone: "-",
                 location: "Bandung, Indonesia",
-                bio: "Fifth-semester Informatics student with strong interest in web development, AI-based systems, and digital technology. Experienced building websites, IoT systems, digital image processing projects, and mobile applications.",
-                shortDesc: "Informatics student working on web, IoT, AI, and mobile projects.",
-                tags: ["Web Development", "AI", "IoT", "Mobile"],
-                education: [{ degree: "Bachelor of Computer Science (Informatics)", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.65/4.00" }],
+                bio: "An active Informatics student with a strong interest in software development and innovative technology. During my studies, I have worked on various projects, ranging from web-based applications and IoT-based automatic garden lights to automated parking barrier systems using algorithmic structures. Accustomed to using programming languages such as Python, Java, HTML, and C++. I enjoy learning new things, am capable of working in a team as well as independently, and have a high enthusiasm for continuous growth in the IT world.",
+                shortDesc: "An active Informatics student with a strong interest in software development and innovative technology. During my studies, I have worked on various projects, ranging from web-based applications and IoT-based automatic garden lights to automated parking barrier systems using algorithmic structures.",
+                tags: ["Software Development", "Web Development", "IoT Development", "UI/UX Design"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "-", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Web & AI Dashboard Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Merancang website dashboard analitik SkySense dan mengimplementasikan kecerdasan sistem prediksi." },
                     {
-                        title: "Relawan Peneliti",
-                        company: "Laboratorium I-WILL",
-                        period: "2024 - Present",
-                        description: "Mendukung kegiatan perancangan, penelitian, dan analisis data untuk sistem IoT dan AI cerdas."
+                        title: "Administration / Customer Service Intern",
+                        company: "Mandalawangi Village Office",
+                        period: "-",
+                        description: "● Managed incoming and outgoing mail and input SDGs data."
+                    },
+                    {
+                        title: "Staff of Media and Publication Division",
+                        company: "Informatics Student Association",
+                        period: "-",
+                        description: "● Created Instagram feed designs for the Informatics Student Association."
+                    },
+                    {
+                        title: "Department Manager of Human Resource Development Division",
+                        company: "Informatics Student Association",
+                        period: "-",
+                        description: "● Managed attendance and activity inputs, and acted as a liaison for related departments."
                     }
                 ],
                 skills: [
-                    { name: "HTML / CSS / JavaScript / PHP / Python", level: 82 },
-                    { name: "React / Bootstrap / Tailwind CSS", level: 82 },
-                    { name: "Laravel / JSON Web / Node.js", level: 80 },
-                    { name: "MySQL", level: 80 },
-                    { name: "Canva / Figma", level: 80 },
+                    { name: "Programming: Python, Java, C++, PHP", level: 0 },
+                    { name: "Software & Tools: Visual Studio Code, Figma, Github, Canva", level: 0 },
+                    { name: "Personality: Leadership, Teamwork, Problem Solving, Social Skills", level: 0 },
+                    { name: "Hobbies: Design, Photography, Reading, Writing", level: 0 }
                 ],
-                projects: [],
-                achievements: ["SkySense Team Member"],
-                social: { github: "https://github.com/shafira-aprillia", linkedin: "https://linkedin.com/in/shafira-aprillia" },
+                projects: [
+                    {
+                        name: "Administration / Customer Service Intern",
+                        description: "Managed incoming and outgoing mail and input SDGs data at Mandalawangi Village Office.",
+                        tech: []
+                    },
+                    {
+                        name: "Media and Publication Design",
+                        description: "Created Instagram feed designs for the Informatics Student Association.",
+                        tech: ["Design", "Instagram"]
+                    },
+                    {
+                        name: "Human Resource Data Management",
+                        description: "Managed attendance and activity inputs, and acted as a liaison for related departments at the Informatics Student Association.",
+                        tech: ["Management"]
+                    }
+                ],
+                achievements: [],
+                social: { github: "", linkedin: "", web: "", instagram: "https://instagram.com/shfiraprillia" }
             },
         ],
     },
