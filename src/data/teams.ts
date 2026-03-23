@@ -975,88 +975,126 @@ export const teams: Team[] = [
         fullName: "Interactive Educational Toy",
         logo: "/logos/donimal.png",
         category: "Educational IoT",
-        description: "Interactive educational toy for early childhood learning. Responds to RFID cards, buttons, and LED signals. Integrates audio storytelling and visual feedback to develop cognitive and emotional skills.",
-        longDescription: "Donimal is an interactive educational toy designed for early childhood learning. It responds to RFID cards, buttons, and LED signals, integrating audio storytelling and visual feedback to help develop cognitive and emotional skills in young children.",
+        description: "DONIMAL is an interactive IoT-based educational doll that uses RFID and audio to support children’s development in a fun way. It is designed to create an engaging learning experience by allowing children to interact with physical cards or objects that trigger specific sounds, stories, or educational content. By combining technology with play, DONIMAL encourages cognitive growth, language development, and curiosity while maintaining a safe and child-friendly environment.",
+        longDescription: "DONIMAL is an interactive IoT-based educational doll that uses RFID and audio to support children’s development in a fun way. It is designed to create an engaging learning experience by allowing children to interact with physical cards or objects that trigger specific sounds, stories, or educational content. By combining technology with play, DONIMAL encourages cognitive growth, language development, and curiosity while maintaining a safe and child-friendly environment.",
         members: [
             {
                 slug: "ikrima",
-                name: "Ikrima Nurul",
-                photo: "/members/ikrima.png",
-                role: "Team Leader & Mobile Developer",
+                name: "Ikrima Nurul Hikmah",
+                photo: "/members/ikrima.jpg",
+                role: "Team Leader & Software Developer",
                 status: "ACTIVE",
-                email: "ikrima@mhs.itenas.ac.id",
-                phone: "+62 812 5555 0001",
+                email: "ikrimanurul2@gmail.com",
+                phone: "+6283821056697",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with strong interest in software development, mobile apps, IoT, and AI. Experienced in building interactive learning applications with Flutter, developing computer vision models using CNN and YOLOv8, and designing end-to-end IoT systems with microcontrollers and sensors. Comfortable working from system design to implementation and motivated to grow in Software Engineering and Artificial Intelligence.",
+                bio: "Informatics undergraduate student with a strong interest in software development and artificial intelligence. Experienced in building mobile applications using Flutter, developing computer vision models based on CNN and YOLOv8, and designing microcontroller-based IoT systems. Understands computer network fundamentals and is accustomed to working on projects end-to-end, from design to implementation. Highly motivated to grow in the fields of Software Engineering and Artificial Intelligence.",
                 shortDesc: "Informatics student focused on mobile, IoT, and AI-based educational systems.",
                 tags: ["Mobile Development", "IoT", "Computer Vision", "AI", "Software Engineering"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.80/4.00" }],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "-" },
+                    { degree: "High School Diploma (Science)", institution: "SMA Negeri 23 Bandung", year: "2021 - 2023", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Team Leader & Mobile Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin tim Donimal dan mengembangkan aplikasi berbasis Flutter untuk pengendalian edukasi anak." },
                     {
-                        title: "Donimal – Aplikasi Pembelajaran Interaktif",
-                        company: "I-WILL Laboratory",
+                        title: "Mobile Developer",
+                        company: "Donimal – Interactive Learning Application",
                         period: "2025 - Present",
-                        description: "Mengembangkan aplikasi mobile dan website edukasi untuk anak usia dini menggunakan Flutter; merancang antarmuka interaktif dan modul pembelajaran warna, bentuk, dan angka."
+                        description: "● Developed mobile applications and educational websites for early childhood using Flutter.\n● Designed a child-friendly and interactive interface.\n● Implemented learning modules for colors, shapes, and numbers."
+                    },
+                    {
+                        title: "Freelance Marketing Influencer",
+                        company: "Freelance",
+                        period: "2025 - Present",
+                        description: "● Communicated and negotiated with influencers for digital campaigns.\n● Analyzed content performance and compiled evaluation reports."
                     }
                 ],
                 skills: [
-                    { name: "Flutter / Mobile Development", level: 85 },
-                    { name: "Python", level: 82 },
-                    { name: "Computer Vision (CNN, YOLOv8)", level: 82 },
-                    { name: "IoT (Arduino / Raspberry Pi)", level: 80 },
-                    { name: "Web Development (HTML / Laravel / Spring Boot)", level: 78 }
+                    { name: "Mobile Development: Flutter", level: 0 },
+                    { name: "Networking: Routing and Switching Fundamentals", level: 0 },
+                    { name: "Programming: Python, Java, PHP", level: 0 },
+                    { name: "IoT: Arduino, Raspberry Pi, Sensor Integration", level: 0 },
+                    { name: "AI: CNN, YOLOv8, Image Processing, Object Detection", level: 0 },
+                    { name: "Web Development: HTML, Laravel, Spring Boot", level: 0 },
+                    { name: "Tools: VS Code, Arduino IDE, Laragon, HeidiSQL, MS Office", level: 0 }
                 ],
                 projects: [
-                    { name: "Donimal – Aplikasi Pembelajaran Interaktif", description: "Aplikasi dan website pembelajaran interaktif untuk anak usia dini dengan modul warna, bentuk, dan angka.", tech: ["Flutter", "Android", "Web"] },
-                    { name: "Deteksi Tumor Otak Menggunakan CNN", description: "Sistem klasifikasi citra MRI menggunakan model CNN dengan tahap pra-pemrosesan dan evaluasi akurasi.", tech: ["Python", "CNN", "Computer Vision"] },
-                    { name: "Klasifikasi Sampah Organik dan Anorganik Menggunakan YOLOv8", description: "Model deteksi objek real-time untuk klasifikasi sampah berbasis YOLOv8.", tech: ["YOLOv8", "Python", "OpenCV"] },
-                    { name: "Sistem Monitoring Ketinggian Air Berbasis IoT", description: "Sistem monitoring ketinggian air real-time menggunakan sensor terintegrasi mikrokontroler.", tech: ["Arduino", "Sensor", "IoT"] },
-                    { name: "Lengan Robotik Berbasis Arduino", description: "Perancangan dan implementasi kendali servo motor untuk lengan robotik.", tech: ["Arduino", "Servo Motor"] }
+                    {
+                        name: "Brain Tumor Detection Using CNN (2025)",
+                        description: "● Performed pre-processing of MRI images.\n● Built and trained a Convolutional Neural Network model.\n● Evaluated model performance using accuracy metrics.",
+                        tech: []
+                    },
+                    {
+                        name: "Organic and Inorganic Waste Classification Using YOLOv8 (2024)",
+                        description: "● Trained YOLOv8 model with custom datasets.\n● Implemented a bounding box-based object detection system.\n● Tested system performance for real-time classification.",
+                        tech: []
+                    },
+                    {
+                        name: "IoT-Based Water Level Monitoring System (2024)",
+                        description: "● Integrated sensors with microcontrollers.\n● Provided real-time data monitoring.",
+                        tech: []
+                    },
+                    {
+                        name: "Arduino-Based Robotic Arm",
+                        description: "● Developed a servo motor control system.\n● Integrated hardware and software components.",
+                        tech: []
+                    }
                 ],
-                achievements: ["Donimal Team Leader", "Educational Innovation Award"],
-                social: { github: "https://github.com/ikrima", linkedin: "https://linkedin.com/in/ikrima" },
+                achievements: [
+                    "Huawei ICT Competition 2025-2026",
+                    "Scientific Paper Writing Competition PIKIR 2025 Makassar"
+                ],
+                social: { github: "", linkedin: "", web: "" },
             },
             {
                 slug: "sondang",
                 name: "Sondang Anjelina",
-                photo: "/members/sondang.png",
-                role: "Embedded Systems & Hardware Engineer",
+                photo: "/members/sondang.jpg",
+                role: "Hardware Engineer",
                 status: "ACTIVE",
-                email: "sondang@mhs.itenas.ac.id",
-                phone: "+62 812 5555 0002",
+                email: "sondanganjelina3@gmail.com",
+                phone: "+6283821616329",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with strong enthusiasm for learning and trying new technologies, especially programming, Internet of Things (IoT), and project-based development. Experienced working in teams on innovative projects such as interactive educational toys and technical writing, and open to part-time opportunities to keep learning and contributing.",
-                shortDesc: "Informatics student active in IoT and interactive educational toy projects.",
-                tags: ["IoT", "Arduino", "RFID", "Embedded Systems"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.72/4.00" }],
+                bio: "Informatics student with strong enthusiasm for learning and trying new things. Actively participates in academic activities, with a keen interest in programming, Internet of Things (IoT), and project development. Experienced in teamwork for innovative projects. Open to various opportunities, including part-time positions, to continue learning and contributing.",
+                shortDesc: "Informatics student enthusiastic about IoT, programming, and innovative project development.",
+                tags: ["IoT", "Arduino", "Programming", "Embedded Systems"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS) Bandung", year: "2023 - Present", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Embedded Systems & Hardware Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengonfigurasikan RFID, modul audio, dan LED interaktif berbasis Arduino pada boneka Donimal." },
                     {
-                        title: "Donimal – Boneka Edukasi Interaktif",
-                        company: "I-WILL Laboratory",
+                        title: "Hardware Engineer",
+                        company: "DONIMAL Project",
                         period: "2024 - Present",
-                        description: "Mengembangkan boneka edukasi interaktif berbasis Arduino Uno untuk membantu anak belajar alfabet, angka, warna, dan suara hewan menggunakan kartu RFID, LED strip, dan modul audio."
+                        description: "● Developed an interactive educational doll based on Arduino Uno to help children learn alphabets, numbers, colors, and animal sounds.\n● Implemented an RFID card system as an interaction medium.\n● Integrated a mobile application to control LED strips, music, and children's story features."
                     },
                     {
-                        title: "Penulis Karya Tulis Ilmiah",
-                        company: "PIKIR 2025",
+                        title: "Scientific Paper Author",
+                        company: "PIKIR 2025 National Competition",
                         period: "2025",
-                        description: "Menyusun karya tulis ilmiah tentang boneka edukasi hewan berbasis Raspberry dan meraih Juara Harapan 1 tingkat nasional."
+                        description: "● Designed and developed the concept of an interactive educational doll based on Raspberry Pi.\n● Authored a scientific paper that won 1st Honorable Mention (Juara Harapan 1) at the national level."
                     }
                 ],
                 skills: [
-                    { name: "Arduino", level: 85 },
-                    { name: "RFID", level: 82 },
-                    { name: "Embedded IoT Prototyping", level: 80 },
-                    { name: "Team Collaboration", level: 78 }
+                    { name: "Programming Languages: C, Python, HTML, PHP (basic)", level: 0 },
+                    { name: "Tools: Arduino IDE, VSCode, HeidiSQL, XAMPP, Proteus, Delphi-7", level: 0 },
+                    { name: "Additional Skills: Microsoft Office (Word, Excel, PowerPoint)", level: 0 }
                 ],
                 projects: [
-                    { name: "Donimal – Boneka Edukasi Interaktif", description: "Boneka edukasi interaktif berbasis Arduino Uno dan RFID dengan dukungan LED strip dan audio.", tech: ["Arduino", "RFID", "LED Strip", "Audio Modules"] },
-                    { name: "Boneka Edukasi Hewan Berbasis Raspberry", description: "Konsep boneka edukasi interaktif yang dikembangkan sebagai karya tulis ilmiah.", tech: ["Raspberry Pi", "IoT", "Education"] }
+                    {
+                        name: "DONIMAL Project",
+                        description: "Developed an interactive educational doll based on Arduino Uno to help children learn alphabets, numbers, colors, and animal sounds. The system uses an RFID card as an interaction medium, equipped with a mobile application to control LED strips, as well as music and children's story features that can be played via random buttons.",
+                        tech: ["Arduino Uno", "Python", "RFID", "Mobile App", "LED Strip"]
+                    },
+                    {
+                        name: "Scientific Paper: Raspberry-Based Animal Educational Doll",
+                        description: "Designed and developed the concept of an interactive educational doll.",
+                        tech: []
+                    }
                 ],
-                achievements: ["Donimal Team Member"],
-                social: { github: "https://github.com/sondang", linkedin: "https://linkedin.com/in/sondang" },
+                achievements: [
+                    "1st Honorable Mention (Juara Harapan 1) in National Student Scientific Paper Writing Competition PIKIR 2025"
+                ],
+                social: { github: "", linkedin: "", web: "" },
             },
         ],
     },
