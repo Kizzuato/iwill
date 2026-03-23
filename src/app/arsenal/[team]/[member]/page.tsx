@@ -9,6 +9,27 @@ import { use } from "react";
 import { getTeamBySlug, getMemberBySlug } from "@/data/teams";
 import { notFound } from "next/navigation";
 
+function FormattedText({ text }: { text: string }) {
+    if (!text) return null;
+    return (
+        <div className="space-y-1.5">
+            {text.split('\n').map((line, i) => {
+                const trimmed = line.trim();
+                if (!trimmed) return null;
+                if (trimmed.startsWith('○') || trimmed.startsWith('●') || trimmed.startsWith('-')) {
+                    return (
+                        <div key={i} className="flex items-start gap-2">
+                            <span className="text-primary mt-[3px] text-[10px]">{trimmed.charAt(0)}</span>
+                            <span className="text-sm opacity-90 leading-relaxed text-left">{trimmed.slice(1).trim()}</span>
+                        </div>
+                    );
+                }
+                return <p key={i} className="text-sm opacity-90 leading-relaxed">{trimmed}</p>;
+            })}
+        </div>
+    );
+}
+
 export default function MemberPage({ params }: { params: Promise<{ team: string; member: string }> }) {
     const { team: teamSlug, member: memberSlug } = use(params);
     const team = getTeamBySlug(teamSlug);
@@ -84,6 +105,9 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                                 {member.social.instagram && (
                                     <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-pink-600 text-white text-xs rounded hover:bg-pink-500 transition-colors">Instagram</a>
                                 )}
+                                {member.social.web && (
+                                    <a href={member.social.web} target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-emerald-600 text-white text-xs rounded hover:bg-emerald-500 transition-colors">Website</a>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -91,7 +115,7 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                     {/* Bio */}
                     <div className="mt-6 pt-6 border-t-2 border-dashed border-gray-300 dark:border-gray-700">
                         <h3 className="font-pixel text-sm text-primary mb-2">ABOUT</h3>
-                        <p className="text-sm leading-relaxed opacity-80 whitespace-pre-line">{member.bio}</p>
+                        <FormattedText text={member.bio} />
                     </div>
                 </motion.div>
 
@@ -182,7 +206,9 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                                         <span className="text-xs opacity-60">{exp.period}</span>
                                     </div>
                                     <p className="text-sm text-primary mb-1">{exp.company}</p>
-                                    <p className="text-sm opacity-70 whitespace-pre-line">{exp.description}</p>
+                                    <div className="mt-2">
+                                        <FormattedText text={exp.description} />
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -200,7 +226,9 @@ export default function MemberPage({ params }: { params: Promise<{ team: string;
                             {member.projects.map((project, idx) => (
                                 <div key={idx} className="p-4 bg-gray-100 dark:bg-zinc-800 border-2 border-black dark:border-white hover:shadow-pixel transition-all">
                                     <h4 className="font-bold text-primary mb-2">{project.name}</h4>
-                                    <p className="text-sm opacity-70 mb-3 whitespace-pre-line">{project.description}</p>
+                                    <div className="mb-3">
+                                        <FormattedText text={project.description} />
+                                    </div>
                                     <div className="flex flex-wrap gap-1">
                                         {project.tech.map((t) => (
                                             <span key={t} className="text-[10px] px-2 py-0.5 bg-background border border-foreground/30">{t}</span>

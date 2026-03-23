@@ -17,7 +17,7 @@ export interface MemberCV {
     skills: { name: string; level: number }[];
     projects: { name: string; description: string; tech: string[] }[];
     achievements: string[];
-    social: { github?: string; linkedin?: string; instagram?: string };
+    social: { github?: string; linkedin?: string; instagram?: string; web?: string };
 }
 
 export interface Team {
@@ -616,6 +616,82 @@ export const teams: Team[] = [
         longDescription: "NetraDUMP is an integrated waste management system using AI cameras for detection, collection, and disposal. The system features steering wheel/joystick control and real-time wireless monitoring via web dashboard for efficient waste management operations.",
         members: [
             {
+                slug: "malendra",
+                name: "Malendra Sahla Rizky",
+                photo: "/members/malendra.JPG",
+                role: "Team Leader & AI and Website Designer",
+                status: "ACTIVE",
+                email: "malendra.rzk@gmail.com",
+                phone: "+6281386881171",
+                location: "Bandung, Indonesia",
+                bio: "Inquisitive undergraduate student majoring in computer science. Proficient in Python, able to make websites based on Flask and FastAPI. Learned C, C++, HTML, CSS, and a little bit of JavaScript.",
+                shortDesc: "Informatics student focusing on Python, data science, and backend APIs.",
+                tags: ["Python", "Data Science", "FastAPI", "Flask"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "Sep 2024 - Present", gpa: "3.88/4.00" },
+                    { degree: "High School Diploma (Rekayasa Perangkat Lunak)", institution: "SMK Negeri 2 Bandung", year: "Jun 2021 - Jun 2024", gpa: "85.21/100.00" },
+                ],
+                experience: [
+                    {
+                        title: "Data Science Intern",
+                        company: "PT. Kazee Digital Indonesia",
+                        period: "Jan 2023 – Jun 2023",
+                        description: "● Increasing the accuracy of the current face recognition service for online attendance application.\n● Led the team to build a new API using FastAPI framework for several data science models and upscaling efficiency by 50%.\n● Increasing the data model’s accuracy by 25% with labeling more than 2000 images and more than 10000 texts."
+                    },
+                    {
+                        title: "Project Controller Manager",
+                        company: "AIESEC in Bandung",
+                        period: "Feb 2026 – Present",
+                        description: "● Controlling all projects ran by conducting project hearing and audits. Ensuring project sustainability for the entity."
+                    },
+                    {
+                        title: "Quality Assurance Team Leader of Engagement",
+                        company: "AIESEC in Bandung",
+                        period: "Feb 2025 – Jan 2026",
+                        description: "● Contributed to 1 agenda rundown and a budget plan for a 2.5 months event called AIESEC Future Leaders.\n● Collaborated with 19 other functional colleagues and 100+ local committee members."
+                    },
+                    {
+                        title: "Researcher",
+                        company: "I-WILL Laboratory",
+                        period: "Jun 2025 – Aug 2025",
+                        description: "● Managed project’s software for the project NetraDUMP."
+                    },
+                    {
+                        title: "Human Resource Management Staff",
+                        company: "Himpunan Mahasiswa Informatika Itenas",
+                        period: "Dec 2024 – Dec 2025",
+                        description: "● Tracking and managing 60+ organization members’ development."
+                    }
+                ],
+                skills: [
+                    { name: "Python", level: 90 },
+                    { name: "Flask / FastAPI", level: 88 },
+                    { name: "HTML / CSS / Express JS", level: 85 },
+                    { name: "Pandas / SQL", level: 80 },
+                    { name: "PHP / C / C++", level: 80 },
+                    { name: "English (Professional) / German (Elementary)", level: 85 },
+                ],
+                projects: [
+                    {
+                        name: "NetraDUMP – Raspberry Pi-powered Trash-picking Robot",
+                        description: "Remotely operated waste collection robot with a robotic arm for hazardous/toxic (B3) waste handling, integrated with multiple webcams for real-time vision and planned YOLOv8 object detection. Controlled via PC steering wheel with bidirectional Python Flask & WebSocket communication for low-latency telemetry streaming.",
+                        tech: ["Python", "Flask", "WebSocket", "Raspberry Pi", "YOLOv8"]
+                    },
+                    {
+                        name: "Presense – Event Attendance Tracker",
+                        description: "Event attendance tracking system. Link: https://presense.malendra.com/",
+                        tech: ["Python", "Web", "Flask"]
+                    },
+                ],
+                achievements: [
+                    "Finalist of University Level Scientific Paper Competition – PIKIR 2025",
+                    "Online Scholarship Competition (OSC) – Undergraduate Fully Funded (2023)",
+                    "Harvard’s CS50x Intro to Computer Science & CS50P Intro to Python",
+                    "TOEIC Score: 925"
+                ],
+                social: { github: "", linkedin: "https://linkedin.com/in/malendra", web: "https://malendra.com" },
+            },
+            {
                 slug: "ari",
                 name: "Ari Ferdiana",
                 photo: "/members/ari.jpg",
@@ -664,55 +740,7 @@ export const teams: Team[] = [
                 achievements: [
                     "Online Scholarship Competition (OSC) – Fully Funded Undergraduate Scholarship (2023)",
                 ],
-                social: { github: "https://github.com/AriFerdiana", linkedin: "#" },
-            },
-            {
-                slug: "malendra",
-                name: "Malendra Sahla Rizky",
-                photo: "/members/malendra.JPG",
-                role: "Backend API & Data Engineer",
-                status: "ACTIVE",
-                email: "malendra@mhs.itenas.ac.id",
-                phone: "+62 812 3333 0002",
-                location: "Bandung, Indonesia",
-                bio: "Inquisitive Informatics undergraduate proficient in Python and experienced in building web applications with Flask and FastAPI. Has industry experience in data science, API development, and applied machine learning.",
-                shortDesc: "Informatics student focusing on Python, data science, and backend APIs.",
-                tags: ["Python", "Data Science", "FastAPI", "Flask"],
-                education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2024 - Present", gpa: "3.88/4.00" },
-                    { degree: "Vocational High School in Software Engineering", institution: "SMK Negeri 2 Bandung", year: "2021 - 2024", gpa: "85.21/100.00" },
-                ],
-                experience: [
-                    { title: "Backend API & Data Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun infrastruktur API Flask, WebSocket dan komunikasi logik AI untuk NetraDUMP." },
-                    {
-                        title: "Data Science Intern",
-                        company: "PT. Kazee Digital Indonesia",
-                        period: "Jan 2023 – Jun 2023",
-                        description: "Meningkatkan akurasi layanan face recognition, membangun API baru dengan FastAPI untuk model data science, dan meningkatkan akurasi model melalui labeling citra dan teks."
-                    },
-                    {
-                        title: "Researcher",
-                        company: "I-WILL Laboratory",
-                        period: "Jun 2025 – Aug 2025",
-                        description: "Mengelola software project NetraDUMP dan berkontribusi pada pipeline data dan kontrol."
-                    }
-                ],
-                skills: [
-                    { name: "Python", level: 90 },
-                    { name: "Flask / FastAPI", level: 88 },
-                    { name: "Pandas / SQL", level: 85 },
-                    { name: "C / C++", level: 80 },
-                    { name: "HTML / CSS / Express.js", level: 80 },
-                ],
-                projects: [
-                    { name: "NetraDUMP – Raspberry Pi-powered Trash-picking Robot", description: "Robot pengambil sampah berbasis Raspberry Pi dengan lengan robotik, beberapa webcam, dan komunikasi Flask & WebSocket.", tech: ["Python", "Raspberry Pi", "Flask", "WebSocket"] },
-                    { name: "Presense – Event Attendance Tracker", description: "Sistem presensi acara berbasis web dengan autentikasi dan dashboard kehadiran.", tech: ["Web", "Python", "Flask"] },
-                ],
-                achievements: [
-                    "Finalist PIKIR 2025 – Scientific Paper Competition",
-                    "Online Scholarship Competition (OSC) – Fully Funded Undergraduate Scholarship (2023)",
-                ],
-                social: { github: "https://github.com/malendra", linkedin: "https://linkedin.com/in/malendra" },
+                social: { github: "https://github.com/AriFerdiana", linkedin: "" },
             },
             {
                 slug: "lingga",
