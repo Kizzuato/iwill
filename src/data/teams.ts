@@ -39,12 +39,12 @@ export const teams: Team[] = [
         logo: "/logos/drone.png",
         category: "Robotics & Computer Vision",
         description: "F450-based IoT drone for Indodefence 2024. Features real-time control, human detection, surveillance capabilities, and web-based visualization dashboard for tracking and monitoring.",
-        longDescription: "The Drone Astra Versa team develops F450-based IoT drones integrated with AI for the 'friend and foe' detection concept. Our systems feature real-time control, human detection, surveillance capabilities, and web-based visualization dashboards for tracking and monitoring applications.",
+        longDescription: "Astra Versa, developed by I-WILL, is a programmable drone platform designed to accomplish diverse missions through intelligent, software-driven autonomy. Built as an evolving and adaptable system, it integrates modular design and ethical innovation to address real-world challenges, with a primary focus on human detection and real-time web-based mapping. Astra Versa has also supported VTOL drone development for KRTI (Kontes Robot Terbang Indonesia), showcasing its flexibility and mission-ready performance.",
         members: [
             {
                 slug: "shafira",
                 name: "Shafira Kurnia Fasya",
-                photo: "/members/shafira.png",
+                photo: "/members/shafira.JPG",
                 role: "Chief of Digital Media",
                 status: "ACTIVE",
                 email: "shafirakf@gmail.com",
@@ -97,148 +97,196 @@ export const teams: Team[] = [
             {
                 slug: "zufar",
                 name: "Muhammad Zufar Dafy",
-                photo: "/members/zufar.jpg",
-                role: "IoT System Integrator",
+                photo: "/members/zufar.png",
+                role: "Backend Developer",
                 status: "ACTIVE",
-                email: "zufar.dafy@mhs.itenas.ac.id",
-                phone: "+62 812 0000 0002",
+                email: "dafyluck@gmail.com",
+                phone: "+6289696213438",
                 location: "Bandung, Indonesia",
-                bio: "Passionate about drone technology and IoT systems. Contributing to the Drone Astra Versa project with focus on system integration.",
-                shortDesc: "Working on drone system integration and IoT development.",
-                tags: ["IoT", "Drone", "Systems"],
+                bio: "Highly motivated student with a keen interest in artificial intelligence, machine learning, and deep learning. Actively engaged in keeping abreast of technological advancements and participating in projects that apply technical knowledge. Possesses strong communication and teamwork abilities, with a dedication to continuous learning and professional growth in the technology industry.",
+                shortDesc: "Highly motivated student with a keen interest in artificial intelligence, machine learning, and deep learning. Actively engaged in keeping abreast of technological advancements and participating in projects that apply technical knowledge. Possesses strong communication and teamwork abilities, with a dedication to continuous learning and professional growth in the technology industry.",
+                tags: ["AI", "Machine Learning", "Deep Learning", "Full-Stack AI", "Python"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "-" },
+                    { degree: "S1 Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2022 - Present", gpa: "3.86" }
                 ],
                 experience: [
-                    { title: "IoT System Integrator", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan dan mengintegrasikan sistem IoT serta komunikasi pada Drone Astra Versa." },
-                    { title: "Drone Team Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Contributing to drone system development and testing." },
+                    {
+                        title: "Cybersecurity Learning Module Maker",
+                        company: "Institut Teknologi Nasional",
+                        period: "August 2023",
+                        description: "● Design and develop cyber security learning module.\n● Develop concepts and learning materials that are easy to understand and interesting."
+                    }
                 ],
                 skills: [
-                    { name: "Python", level: 90 },
-                    { name: "Arduino/ESP32", level: 78 },
-                    { name: "IoT Systems", level: 75 },
-                    { name: "Drone Technology", level: 72 },
-                    { name: "Backend Development", level: 90 },
+                    { name: "Python", level: 0 },
+                    { name: "Machine Learning", level: 0 },
+                    { name: "Deep Learning", level: 0 },
+                    { name: "Desire to Learn", level: 0 }
                 ],
                 projects: [
-                    { name: "Drone Astra Versa", description: "IoT drone system for surveillance applications", tech: ["Python", "IoT", "Sensors"] },
+                    {
+                        name: "Empty Land Detection Using YOLOv9",
+                        description: "Trained and tested a YOLOv9 model for empty land detection. Built the web interface for user interaction and model integration. Deployed the model and application to the web.",
+                        tech: ["YOLOv9", "Python", "Full-Stack AI"]
+                    },
+                    {
+                        name: "Generative AI Chatbot with RAG",
+                        description: "Fine-tuned a large language model (LLM) using RAG for improved response accuracy and factual grounding. Conducted a comprehensive literature search to identify relevant academic journals for RAG data processing. Processed and prepared the retrieved data for effective integration with the RAG system.",
+                        tech: ["LLM", "RAG", "Python"]
+                    }
                 ],
-                achievements: ["Drone Astra Versa Team Member"],
-                social: { github: "https://github.com/zufar", linkedin: "https://linkedin.com/in/zufar" },
+                achievements: [
+                    "3rd Place in the Bandung Datathon (2023)",
+                    "Cisco Introduction to Cybersecurity",
+                    "Cisco Network Basics",
+                    "Cisco Devices and Initial Configuration",
+                    "Dicoding Belajar Dasar Data Science",
+                    "Dicoding Memulai Pemrograman dengan Python",
+                    "Dicoding Belajar Dasar Visualisasi Data",
+                    "Dicoding Belajar Machine Learning untuk Pemula"
+                ],
+                social: { github: "", linkedin: "", web: "" }
             },
             {
                 slug: "zakhwa",
                 name: "Zakhwa Aliya Maryam",
-                photo: "members/zakhwa.png",
-                role: "Drone Researcher & 3D Designer",
+                photo: "/members/zakhwa.png",
+                role: "Hardware Developer & 3D Designer",
                 status: "ACTIVE",
-                email: "zakhwa.aliya@mhs.itenas.ac.id",
-                phone: "+62 813 4567 8901",
+                email: "zakhwaaliyamaryam78@gmail.com",
+                phone: "+62895339900904",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with a strong interest in robotics and the broader world of IT. Quick to understand new material and highly motivated to explore and learn new technologies, especially in robotics and innovation with I-WILL.",
-                shortDesc: "Informatics student passionate about robotics and learning new IT technologies.",
-                tags: ["Robotics", "Informatics", "Leadership", "UI/UX", "Social Media"],
+                bio: "I am an Informatics student with a strong interest in learning things related to the IT world, especially Robotics. I have the ability to understand material quickly and enjoy learning new things in the fields I am interested in. I am ambitious and ready to contribute to making new innovations with I-WILL.",
+                shortDesc: "I am an Informatics student with a strong interest in learning things related to the IT world, especially Robotics. I have the ability to understand material quickly and enjoy learning new things in the fields I am interested in. I am ambitious and ready to contribute to making new innovations with I-WILL.",
+                tags: ["Robotics", "Informatics", "UI/UX", "Design", "Leadership"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "" },
-                    { degree: "High School (Science)", institution: "SMA Negeri 1 Baleendah", year: "2022 - 2024", gpa: "" },
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "-" },
+                    { degree: "Science Major", institution: "SMA Negeri 1 Baleendah", year: "2022 - 2024", gpa: "-" }
                 ],
                 experience: [
-                    { title: "Drone Researcher & 3D Designer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Tim peneliti untuk Drone Astra Versa dan desain mekanik 3D Drone Astra Versa." },
                     {
-                        title: "Participant - Bootcamp Codespace (UI/UX Division)",
-                        company: "Codespace",
+                        title: "UI/UX Division Member",
+                        company: "Bootcamp Codespace",
                         period: "2024",
-                        description: "Mengikuti pelatihan dan praktik di bidang UI/UX design."
+                        description: "● Joined the UI/UX division for interface design learning."
                     },
                     {
-                        title: "Participant - JuaraGCP Season 11",
-                        company: "Google",
-                        period: "2024",
-                        description: "Mengikuti bootcamp cloud dan teknologi Google."
-                    },
-                    {
-                        title: "Best Innovators - ICSIT 2025",
-                        company: "-",
-                        period: "2025",
-                        description: "Mengikuti kompetisi riset pengembangan pembaharuan teknologi tingkat internasional dengan fokus pada AI dan IoT."
+                        title: "Programming Division Member",
+                        company: "KARBIT (Komunitas Remaja Berbasis IT)",
+                        period: "2022",
+                        description: "● Active member of the programming division at IT-based youth community."
                     }
                 ],
                 skills: [
-                    { name: "Robotics Fundamentals", level: 79 },
-                    { name: "Basic Programming", level: 78 },
-                    { name: "UI/UX Design (Figma)", level: 85 },
+                    { name: "Leadership", level: 0 },
+                    { name: "Social Media Administration", level: 0 },
+                    { name: "Design: Canva, Figma, Picsart", level: 0 },
+                    { name: "Language: Indonesian (Fluent)", level: 0 },
+                    { name: "Language: English (Intermediate)", level: 0 }
                 ],
                 projects: [],
-                achievements: ["Drone Astra Versa Team Member"],
-                social: { github: "https://github.com/cheese-voyager", linkedin: "https://linkedin.com/in/zakhwa" },
+                achievements: [
+                    "Figma Bootcamp by @figmacamp.id (2025 - Present)",
+                    "Bootcamp JuaraGCP Season 11 by Google (2024)"
+                ],
+                social: { github: "", linkedin: "", web: "", instagram: "https://instagram.com/szeexly" }
             },
             {
                 slug: "farhan",
-                name: "Farhan Kamil",
+                name: "Farhan Kamil Hermansyah",
                 photo: "/members/farhan.jpg",
-                role: "AI & Backend Engineer",
+                role: "AI Engineer & Software Developer",
                 status: "ACTIVE",
-                email: "farhan.kamil@mhs.itenas.ac.id",
-                phone: "+62 812 0000 0004",
+                email: "farmiljobs@gmail.com",
+                phone: "+6289609656714",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with a strong interest in Artificial Intelligence, data science, and backend engineering. Experienced in building AI/ML-powered systems, retrieval-augmented generation (RAG), and graph-based AI applications using modern Python ecosystems and cloud tools.",
-                shortDesc: "AI and backend-focused Informatics student working on applied AI systems.",
-                tags: ["AI", "Machine Learning", "Backend", "Data Science"],
+                bio: "Informatics student at ITENAS Bandung with a strong focus on Artificial Intelligence, Generative AI, and Backend Engineering. Experienced in building multi-agent systems using LangGraph, Knowledge Graphs with Neo4j, and Advanced RAG pipelines. Passionate about developing innovative AI solutions for forensics, education, and career ecosystems.",
+                shortDesc: "Informatics student at ITENAS Bandung with a strong focus on Artificial Intelligence, Generative AI, and Backend Engineering. Experienced in building multi-agent systems using LangGraph, Knowledge Graphs with Neo4j, and Advanced RAG pipelines. Passionate about developing innovative AI solutions for forensics, education, and career ecosystems.",
+                tags: ["Artificial Intelligence", "Generative AI", "LangGraph", "RAG", "Backend Development"],
                 education: [
                     { degree: "Bachelor of Informatics Engineering", institution: "Institut Teknologi Nasional (ITENAS)", year: "2024 - Present", gpa: "3.94/4.00" },
                 ],
                 experience: [
-                    { title: "AI & Backend Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun sistem AI, RAG, dan arsitektur backend untuk pemrosesan data Drone Astra Versa." },],
+                    {
+                        title: "AI & Backend Engineer",
+                        company: "I-WILL Laboratory",
+                        period: "2024 - Present",
+                        description: "● Designing and building AI-powered systems, multi-agent workflows, and advanced RAG architectures for Drone Astra Versa projects."
+                    }
+                ],
                 skills: [
-                    { name: "Python", level: 88 },
-                    { name: "SQL", level: 85 },
-                    { name: "JavaScript / Java", level: 80 },
-                    { name: "FastAPI / Flask / MCP", level: 85 },
-                    { name: "LangGraph / LangChain / RAG", level: 90 },
+                    { name: "Python (LangGraph, LangChain, RAG, OpenAI, Gemini)", level: 92 },
+                    { name: "Backend (FastAPI, Flask, MCP)", level: 88 },
+                    { name: "Databases (SQL, Neo4j, Pinecone, ChromaDB, FAISS)", level: 85 },
+                    { name: "Data Science (NumPy, Pandas, Matplotlib)", level: 82 },
+                    { name: "Java / JavaScript", level: 80 }
                 ],
                 projects: [
-                    { name: "GraphWeaver", description: "AI-powered forensic investigator system dengan multi-agent workflow menggunakan LangGraph dan Neo4j untuk knowledge graph reasoning.", tech: ["Python", "LangGraph", "Neo4j", "Llama-3"] },
-                    { name: "SecondBrain (ScholarSync)", description: "Sistem RAG untuk document intelligence dengan chunking, vector database retrieval, dan jawaban berbasis sitasi.", tech: ["Python", "LangChain", "Vector DB"] },
-                    { name: "Farmile", description: "Platform ekosistem karier berbasis AI multi-agent dengan ATS checker, CV builder, dan AI interviewer.", tech: ["Python", "AI", "RAG"] },
+                    {
+                        name: "GraphWeaver",
+                        description: "AI-powered forensic investigator system orchestrating multi-agent workflows using LangGraph and Neo4j with Llama-3 to map complex knowledge graphs.",
+                        tech: ["LangGraph", "Neo4j", "Llama-3", "Flask API"]
+                    },
+                    {
+                        name: "SecondBrain (ScholarSync)",
+                        description: "Advanced RAG implementation utilizing document ingestion, advanced chunking strategies, and vector database retrieval to reduce AI hallucinations.",
+                        tech: ["RAG", "Python", "Vector DB"]
+                    },
+                    {
+                        name: "Farmile",
+                        description: "Smart career ecosystem platform using multi-agent architecture with an AI-driven ATS checker, autonomous CV builder, and AI interviewer system.",
+                        tech: ["Multi-Agent AI", "Python", "ATS Checker"]
+                    }
                 ],
                 achievements: [
-                    "Top 20 Finalist - AI Talent Hub 2025",
-                    "Research grant Prokimnas untuk Computer Vision pada drone penebar benih"
+                    "Top 20 Finalist - AI Talent Hub 2025 (PT Pertamina & UI)",
+                    "Research grant Prokimnas for Computer Vision in seed-spreading drones",
+                    "Certifications: Elevaite Azure 2025, Full Stack RAG AI Engineer, Data Science & ML Bootcamp"
                 ],
-                social: { github: "https://github.com/cheese-voyager", linkedin: "-" },
+                social: { github: "https://github.com/Farmil23", linkedin: "https://www.linkedin.com/in/farhan-kamil-hermansyah-184850328/" }
             },
             {
                 slug: "najwa",
                 name: "Najwa Hikmatyar",
-                photo: "/members/najwa.png",
-                role: "Multimedia & Simulator Developer",
+                photo: "/members/najwa.jpg",
+                role: "Drone Researcher & Robotics Specialist",
                 status: "ACTIVE",
-                email: "najwa@mhs.itenas.ac.id",
-                phone: "+62 814 5678 9012",
+                email: "najwa.hikmatyar27@gmail.com",
+                phone: "+6289676208887",
                 location: "Bandung, Indonesia",
-                bio: "Informatics undergraduate student at Institut Teknologi Nasional Bandung with a strong interest in multimedia and game development. Actively developing skills in C# programming, Unity game development, and video editing with DaVinci Resolve while contributing as a member of the Drone team at I-WILL Laboratory.",
-                shortDesc: "Informatics student focused on Unity game development and multimedia.",
-                tags: ["C#", "Unity", "Multimedia", "Video Editing"],
+                bio: "Informatics undergraduate student at Institut Teknologi Nasional (ITENAS) with a deep interest in Robotics, Artificial Intelligence (AI), and the application of technology in Motorsports. Focused on the integration of intelligent systems and computation in robotic solutions and innovative research across engineering, data science, and automotive fields.",
+                shortDesc: "Informatics undergraduate student at Institut Teknologi Nasional (ITENAS) with a deep interest in Robotics, Artificial Intelligence (AI), and the application of technology in Motorsports. Focused on the integration of intelligent systems and computation in robotic solutions and innovative research across engineering, data science, and automotive fields.",
+                tags: ["Informatics", "Robotics", "Artificial Intelligence", "Autonomous Systems", "Systems Integration"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2023 - Present", gpa: "3.60/4.00" },
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "3.70/4.00" },
+                    { degree: "Science Major", institution: "SMA KP 1 Ciparay", year: "2021 - 2024", gpa: "-" }
                 ],
                 experience: [
-                    { title: "Multimedia & Simulator Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan simulasi game engine (Unity) dan materi video/multimedia untuk Drone Astra Versa." },
                     {
-                        title: "Anggota – Tim Drone | Arc-01",
-                        company: "Innovative Workingspace Integrated Living Laboratory (I-WILL)",
-                        period: "2023 - Present",
-                        description: "Berpartisipasi dalam pengembangan sistem drone dan aktivitas laboratorium inovasi."
+                        title: "Vice Chairperson of English Club",
+                        company: "SMA KP 1 Ciparay",
+                        period: "2022 - 2023",
+                        description: "● Led weekly club activities for 20+ members, including English discussions, competition preparations, and public speaking training.\n● Represented the school in English competitions and designed mentoring programs for new members focusing on public speaking skills."
                     }
                 ],
                 skills: [
-                    { name: "C#", level: 85 },
-                    { name: "Unity Game Engine", level: 80 },
-                    { name: "DaVinci Resolve", level: 78 },
+                    { name: "Programming: C++, Python, C#", level: 85 },
+                    { name: "Software: Unity, Canva, Google Docs, MS Office", level: 82 },
+                    { name: "Multimedia: Adobe Lightroom, Capcut, DaVinci Resolve", level: 80 },
+                    { name: "Language: Indonesian (Native), English (TOEFL: 550)", level: 90 }
                 ],
-                projects: [],
-                achievements: ["Drone Astra Versa Team Member"],
-                social: { github: "https://github.com/najwa", linkedin: "https://linkedin.com/in/najwa" },
+                projects: [
+                    {
+                        name: "Ultrasonic Motion Alert Detector",
+                        description: "A circuit designed to detect objects within range using an ultrasonic sensor on a servo, giving sound alerts and light color changes upon detection.",
+                        tech: ["Arduino", "Servo", "Ultrasonic sensor"]
+                    }
+                ],
+                achievements: [
+                    "English Club Vice Chairperson (2022 - 2023)",
+                    "Drone Astra Versa Team Member"
+                ],
+                social: { github: "", linkedin: "" }
             },
         ],
     },
@@ -313,7 +361,7 @@ export const teams: Team[] = [
             {
                 slug: "asri",
                 name: "Asri Tanisha R.",
-                photo: "/members/asri.JPG",
+                photo: "/members/asri.jpg",
                 role: "Computer Vision Engineer",
                 status: "ACTIVE",
                 email: "asri.tanisha@mhs.itenas.ac.id",
@@ -351,7 +399,7 @@ export const teams: Team[] = [
             {
                 slug: "matilde",
                 name: "Matilde Ina",
-                photo: "/members/matilde.JPG",
+                photo: "/members/ina.jpg",
                 role: "IoT & Web Developer",
                 status: "ACTIVE",
                 email: "matilde.ina@mhs.itenas.ac.id",
@@ -402,7 +450,7 @@ export const teams: Team[] = [
             {
                 slug: "shandy",
                 name: "Shandy Handika",
-                photo: "/members/shandy.JPG",
+                photo: "/members/shandy.jpg",
                 role: "Team Leader & Wiring & Programmer",
                 status: "INACTIVE",
                 email: "shandy.handika@mhs.itenas.ac.id",
@@ -422,7 +470,7 @@ export const teams: Team[] = [
             {
                 slug: "rainova",
                 name: "Rainova Rahaniawan",
-                photo: "/members/rainova.JPG",
+                photo: "/members/rainova.jpg",
                 role: "Mechanical & Hardware Engineer",
                 status: "ACTIVE",
                 email: "rainova05@gmail.com",
@@ -723,7 +771,7 @@ export const teams: Team[] = [
             {
                 slug: "eka",
                 name: "Eka Fajar Rahmansyah",
-                photo: "/members/eka.JPG",
+                photo: "/members/eka.jpg",
                 role: "Drafter and Mechanical Support",
                 status: "ACTIVE",
                 email: "ekahr8@gmail.com",
@@ -1260,7 +1308,7 @@ export const teams: Team[] = [
             {
                 slug: "rida",
                 name: "Rida Rahmaniah El Sya’bani",
-                photo: "/members/rida.png",
+                photo: "/members/rida.jpg",
                 role: "Team Leader & Hardware Developer",
                 status: "ACTIVE",
                 email: "rida.rahmaniah@mhs.itenas.ac.id",
@@ -1366,7 +1414,7 @@ export const teams: Team[] = [
             {
                 slug: "shafira-aprillia",
                 name: "Shafira Aprillia",
-                photo: "/members/shafira_aprilia.jpg",
+                photo: "/members/shafiraAprillia.jpg",
                 role: "Software Developer",
                 status: "ACTIVE",
                 email: "shafiraaprillia572@gmail.com",
@@ -1493,7 +1541,7 @@ export const teams: Team[] = [
             {
                 slug: "luthfiandi",
                 name: "Luthfiandi Rizki Kurnia",
-                photo: "/members/luthfi.png",
+                photo: "/members/luthfi.jpg",
                 role: "Computer Vision Engineer",
                 status: "ACTIVE",
                 email: "luthfiandi@mhs.itenas.ac.id",
@@ -1595,7 +1643,7 @@ export const teams: Team[] = [
             {
                 slug: "erlangga",
                 name: "Erlangga Dwi",
-                photo: "/members/erlangga.png",
+                photo: "/members/erlangga.jpg",
                 role: "Team Leader & IoT Business Integrator",
                 status: "ACTIVE",
                 email: "erlangga@mhs.itenas.ac.id",
