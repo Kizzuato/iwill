@@ -753,7 +753,7 @@ export const teams: Team[] = [
                 location: "Bandung, Indonesia",
                 bio: "Detail-oriented and curious undergraduate Computer Science student with hands-on experience in IT infrastructure and network administration. Skilled in configuring LAN, basic server setup, and network security. Demonstrated leadership in team projects and student organizations. Fast learner, adaptable to new technologies, and able to work both independently and in a team environment.",
                 shortDesc: "Detail-oriented and curious undergraduate Computer Science student with hands-on experience in IT infrastructure and network administration",
-                tags: [],
+                tags: ["Network Administration", "IT Infrastructure", "Server Management", "DevOps"],
                 education: [
                     { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "Sep 2024 - Present", gpa: "-" },
                     { degree: "High School Diploma (Computer and Network Major)", institution: "SMK Prakarya Internasional", year: "Jul 2021 - Jul 2024", gpa: "89.51/100.00" }
@@ -797,122 +797,175 @@ export const teams: Team[] = [
         fullName: "Search And Rescue Autonomous Hexapod",
         logo: "/logos/sarah.png",
         category: "Robotics",
-        description: "Search And Rescue Autonomous Hexapod. A six-legged robot with tripod gait, self-balancing via Inverse Kinematics, LiDAR mapping, obstacle avoidance, and voice command control.",
-        longDescription: "S.A.R.A.H (Search And Rescue Autonomous Hexapod) is a six-legged robot designed for search and rescue operations. It features tripod gait locomotion, self-balancing via Inverse Kinematics, LiDAR mapping, obstacle avoidance, and voice command control.",
+        description: "A Search And Rescue Autonomous Hexapod built to navigate complex terrains with stability and intelligence. With advanced locomotion, LiDAR mapping, obstacle avoidance, and voice control, S.A.R.A.H is designed to assist where human access is limited and time is critical.",
+        longDescription: "A Search And Rescue Autonomous Hexapod built to navigate complex terrains with stability and intelligence. With advanced locomotion, LiDAR mapping, obstacle avoidance, and voice control, S.A.R.A.H is designed to assist where human access is limited and time is critical.",
         members: [
             {
                 slug: "viktorikus",
-                name: "Viktorikus Nokia",
-                photo: "/members/viktorikus.png",
-                role: "Team Leader & Embedded Robotics",
+                name: "Viktorikus Nokia Laksamana Febrianto",
+                photo: "/members/viktor.JPG",
+                role: "Team Leader & Hardware Developer",
                 status: "ACTIVE",
-                email: "viktorikus@mhs.itenas.ac.id",
-                phone: "+62 812 4444 0001",
+                email: "victorrikus@gmail.com",
+                phone: "+6282121373459",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student passionate about robotics, IoT, and bridging software with physical hardware. Experienced in hexapod robots, HRI systems, and integrated IoT systems using microcontrollers and sensors, aiming for a career in firmware or hardware engineering.",
-                shortDesc: "Robotics and embedded-systems focused Informatics student leading hexapod development.",
+                bio: "I am interested in pursuing an opportunity as a Firmware or Hardware Engineer (or Embedded Systems Engineer) because I have a strong passion for Robotics, IoT, and bridging the gap between software and physical hardware. During my studies in Informatics at ITENAS, I have applied my programming foundation directly to hands-on projects, including developing Hexapod robots and integrated IoT systems using microcontrollers and sensors. Through this opportunity, I aim to deepen my technical skills in firmware development, hardware-software integration, and control logic, while learning industry-standard best practices. This experience will prepare me to grow into a professional engineer capable of building robust, intelligent, and scalable hardware solutions.",
+                shortDesc: "Firmware or Hardware Engineer (or Embedded Systems Engineer) because I have a strong passion for Robotics, IoT, and bridging the gap between software and physical hardware.",
                 tags: ["Robotics", "IoT", "Embedded Systems", "HRI"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - Present", gpa: "3.38/4.00" }],
+                education: [
+                    { degree: "Bachelor’s Degree in Informatics", institution: "Institut Teknologi Nasional", year: "September 2023 – Present", gpa: "3.38/4.00" }
+                ],
                 experience: [
-                    { title: "Team Leader & Embedded Robotics", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin dan memprogram kontrol motor sinkronis (Tripod Gait) berbasis Inverse Kinematics pada hexapod S.A.R.A.H." },
-                    {
-                        title: "S.A.R.A.H - Search And Rescue Adaptive Hexapod",
-                        company: "Freelance IoT & Robotic Project",
-                        period: "2025",
-                        description: "Mengembangkan robot hexapod berbasis Raspberry Pi dengan kontrol teleoperation, Tripod Gait, dan kinematika untuk gerakan kompleks."
-                    },
                     {
                         title: "Tabletop-bot Companion Robot",
-                        company: "IFAC (Lecturer Project, On Progress)",
+                        company: "IFAC - International Federation (Lecturer Project)",
                         period: "2026",
-                        description: "Mengembangkan sistem Human-Robot Interaction, integrasi IMU dan aktuator, serta NLP berbasis ChatGPT untuk interaksi alami."
+                        description: "● Contributed to research and development of a companion robot project affiliated with IFAC (International Federation of Automatic Control)\n● Designed and implemented a Human-Robot Interaction (HRI) system to enable responsive and communicative robot behavior (Status: Ongoing).\n● Integrated IMU sensors and motor actuators using the ESP32-S3 Audio Board as the main hardware control unit (Status: Ongoing).\n● Conducted hardware prototyping and iterative algorithm testing to ensure system stability and reliability.\n● Implemented ChatGPT as a Natural Language Processing (NLP) engine to analyze conversational context, enabling the robot to understand and respond to human language naturally (Status: Ongoing)."
+                    },
+                    {
+                        title: "S.A.R.A.H - Search And Rescue Adaptive Hexapod",
+                        company: "Freelance IoT and Robotic Project",
+                        period: "2025",
+                        description: "● Developed a six-legged (hexapod) robot based on Raspberry Pi, wirelessly controlled via teleoperation using a PS4 controller.\n● Implemented the Tripod Gait algorithm to produce smooth walking cycles and maintain robot balance during movement.\n● Programmed kinematic logic to support complex motion maneuvers, including omnidirectional walking (forward and backward), in-place rotation, and body posture control (standing and crouching)."
+                    },
+                    {
+                        title: "AI-Based Adaptive Learning System for Solving Three-Variable Linear Equation Systems (SPLTV)",
+                        company: "Freelance AI Engineering",
+                        period: "2025",
+                        description: "● Developed an adaptive learning system for mathematics (Systems of Linear Equations in Three Variables / SPLTV) by integrating a Random Forest model to predict students’ learning strategies in real time.\n● Designed a Breadth-First Search (BFS) algorithm for curriculum flow management, ensuring logical transitions from foundational concepts to advanced topics.\n● Implemented a Rule-Based System to detect procedural versus conceptual errors, providing targeted and specific feedback to learners.\n● Built a backend architecture that processes dynamic problem content transformation based on student profiles and performance."
+                    },
+                    {
+                        title: "Astronomy Document Search Using Keyword-Based Retrieval",
+                        company: "Freelance Information Retrieval Project",
+                        period: "2025",
+                        description: "● Developed an Information Retrieval (IR) system for astronomy journal search using the Vector Space Model with TF-IDF weighting and Cosine Similarity for relevance ranking.\n● Designed a comprehensive Natural Language Processing (NLP) pipeline, including PDF text extraction, tokenization, stopword removal, and stemming (Porter Stemmer) to optimize search indexing.\n● Implemented an automatic extractive summarization feature that generates document summaries by weighting the most important sentences using TF-IDF scores.\n● Built a corpus dataset containing over 1,200 astrophysics research papers, automatically collected through web scraping using the arXiv API.\n● Evaluated system performance using Precision and Recall metrics to ensure the accuracy of information retrieval results."
+                    },
+                    {
+                        title: "Core Team Member",
+                        company: "KRAI - Kontes Robot Abu Indonesia 2025",
+                        period: "2025",
+                        description: "● National Competition Participation: Selected as a core team member of CREON (Creative Robotics Engineers of ITENAS) to represent Institut Teknologi Nasional in the prestigious ABU Robocon Indonesia (KRAI) 2025, organized by the Ministry of Higher Education, Science, and Technology."
                     }
                 ],
                 skills: [
-                    { name: "C / C# / Java / Python", level: 85 },
-                    { name: "Robotics & Kinematics", level: 88 },
-                    { name: "IoT & Microcontrollers", level: 85 },
-                    { name: "Information Retrieval & NLP", level: 80 },
+                    { name: "Programming Languages: C, Java, Python, C#", level: 0 },
+                    { name: "Web Technologies: HTML, CSS, JavaScript", level: 0 },
+                    { name: "Development Tools: Arduino, Visual Studio Code, Thonny Python IDE", level: 0 },
+                    { name: "Databases: MySQL", level: 0 },
+                    { name: "Operating Systems: Windows, Linux", level: 0 },
+                    { name: "Soft Skills: Teamwork, Problem-solving, Time management, patience", level: 0 }
                 ],
                 projects: [
-                    { name: "S.A.R.A.H Hexapod", description: "Robot hexapod dengan Tripod Gait, omnidirectional walking, dan kontrol postur.", tech: ["Python", "Raspberry Pi", "Servo"] },
-                    { name: "AI-Based Adaptive Learning System for SPLTV", description: "Sistem pembelajaran adaptif dengan Random Forest, BFS untuk alur kurikulum, dan rule-based error detection.", tech: ["Python", "Random Forest", "Rule-based System"] },
-                    { name: "Astronomy Document Search", description: "Sistem information retrieval jurnal astronomi dengan TF-IDF dan Cosine Similarity serta summarization otomatis.", tech: ["Python", "NLP", "TF-IDF"] },
+                    {
+                        name: "Tabletop-bot Companion Robot",
+                        description: "A companion robot project affiliated with IFAC featuring Human-Robot Interaction (HRI), integrated IMU sensors and motor actuators using ESP32-S3 Audio Board, and ChatGPT for NLP.",
+                        tech: ["ESP32-S3", "IMU sensors", "ChatGPT", "NLP"]
+                    },
+                    {
+                        name: "S.A.R.A.H (Search And Rescue Adaptive Hexapod)",
+                        description: "A six-legged robot based on Raspberry Pi, wirelessly controlled via teleoperation using a PS4 controller, utilizing Tripod Gait algorithm and complex kinematic logic.",
+                        tech: ["Raspberry Pi", "Tripod Gait", "Kinematics"]
+                    },
+                    {
+                        name: "AI-Based Adaptive Learning System (SPLTV)",
+                        description: "An adaptive learning system integrating Random Forest to predict learning strategies, BFS algorithm for curriculum flow, and Rule-Based System for targeted error feedback.",
+                        tech: ["Random Forest", "BFS Algorithm", "Rule-Based System"]
+                    },
+                    {
+                        name: "Astronomy Document Search",
+                        description: "An Information Retrieval (IR) system for astronomy journals using Vector Space Model, TF-IDF weighting, Cosine Similarity, and an automatic extractive summarization feature.",
+                        tech: ["Vector Space Model", "TF-IDF", "Cosine Similarity", "NLP"]
+                    }
                 ],
-                achievements: ["S.A.R.A.H Team Leader", "Robotics Competition Winner"],
-                social: { github: "https://github.com/viktorikus", linkedin: "https://linkedin.com/in/viktorikus" },
+                achievements: [],
+                social: { github: "https://github.com/Viktorikus", linkedin: "https://www.linkedin.com/in/viktorikus-febrianto-b1b111297", web: "" },
             },
             {
                 slug: "yuddha-sarah",
-                name: "Yuddha",
-                photo: "/members/yuddha-sarah.png",
-                role: "Backend & Systems Integrator",
+                name: "Yuddha Wastu Pramukha",
+                photo: "/members/yuddha.JPG",
+                role: "Software Developer",
                 status: "ACTIVE",
-                email: "yuddha.sarah@mhs.itenas.ac.id",
-                phone: "+62 812 4444 0002",
+                email: "wastupramukha@gmail.com",
+                phone: "+6282117993766",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student with strong interest and experience in software development and Internet of Things (IoT). Used to designing backend web applications and microcontroller-based systems that integrate sensors and actuators.",
-                shortDesc: "Backend developer and IoT enthusiast working on end-to-end systems.",
-                tags: ["Backend Development", "IoT", "Embedded Systems"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "" }],
-                experience: [
-                    { title: "Backend & Systems Integrator", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan arsitektur backend navigasi serta menunjang aktuator teleoperasi S.A.R.A.H." },
+                bio: "Informatics undergraduate student with a strong interest and experience in software development and Internet of Things (IoT) systems. Accustomed to designing and developing web-based backend applications as well as building microcontroller-based systems integrated with sensors and actuators. Possesses a systematic approach to problem-solving, from requirements analysis and software architecture design to circuit design (wiring), implementation, and system testing. End-to-end solution oriented, bridging physical devices to digital systems.",
+                shortDesc: "Informatics undergraduate student with a strong interest and experience in software development and Internet of Things (IoT) systems. Accustomed to designing and developing web-based backend applications as well as building microcontroller-based systems integrated with sensors and actuators.",
+                tags: ["Backend Development", "IoT", "Embedded Systems", "REST API Development", "Hardware Integration"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "-" },
+                    { degree: "Vocational High School Degree (Software Engineering)", institution: "SMKN 4 Bandung", year: "2021 - 2024", gpa: "-" }
+                ],
+                experience: [],
+                skills: [
+                    { name: "Software Development: PHP / JavaScript / Python", level: 0 },
+                    { name: "SQL & Database Design", level: 0 },
+                    { name: "REST API Development", level: 0 },
+                    { name: "Object-Oriented Programming", level: 0 },
+                    { name: "Git Version Control", level: 0 },
+                    { name: "IoT & Embedded Systems: ESP32 / Arduino", level: 0 },
+                    { name: "Sensor Integration (DHT22, LDR, etc.)", level: 0 },
+                    { name: "Digital & Analog Input Processing", level: 0 },
+                    { name: "Basic Electronics & Wiring", level: 0 },
+                    { name: "IoT Platform Integration (Blynk)", level: 0 }
+                ],
+                projects: [
                     {
-                        title: "Software & IoT Developer",
-                        company: "Independent / Academic Projects",
-                        period: "2021 - Present",
-                        description: "Membangun aplikasi backend REST API serta sistem berbasis ESP32/Arduino dengan integrasi sensor dan aktuator."
+                        name: "Queue Ticketing System (Four Vision Media - 2024)",
+                        description: "Developed a cooperative website featuring an online queue taking and booking system.",
+                        tech: []
                     }
                 ],
-                skills: [
-                    { name: "PHP / JavaScript / Python", level: 82 },
-                    { name: "REST API Development", level: 80 },
-                    { name: "SQL & Database Design", level: 80 },
-                    { name: "ESP32 / Arduino", level: 82 },
-                    { name: "Sensor Integration (DHT22, LDR, dsb.)", level: 80 },
-                ],
-                projects: [],
-                achievements: ["S.A.R.A.H Team Member"],
-                social: { github: "https://github.com/yuddha-sarah", linkedin: "https://linkedin.com/in/yuddha-sarah" },
+                achievements: [],
+                social: { github: "", linkedin: "", web: "" },
             },
             {
                 slug: "alfarabi",
-                name: "Alfarabi",
-                photo: "/members/alfarabi.png",
-                role: "Multimedia & Visual Content Designer",
+                name: "Alfarabi Putra Bisono",
+                photo: "/members/alfarabi.JPG",
+                role: "Hardware and Software Developer",
                 status: "ACTIVE",
-                email: "alfarabi@mhs.itenas.ac.id",
-                phone: "+62 812 4444 0003",
+                email: "bisonoalfarabi@gmail.com",
+                phone: "+6285392195834",
                 location: "Bandung, Indonesia",
-                bio: "Informatics student at ITENAS with strong interest in Internet of Things (IoT), programming, and databases. Highly curious about technology and actively building skills through projects and organizational activities.",
-                shortDesc: "Informatics student focused on IoT, programming, and multimedia.",
-                tags: ["IoT", "Programming", "Multimedia", "Video Production"],
+                bio: "Informatics student at ITENAS with a strong interest in the Internet of Things (IoT), programming, and databases. Highly curious about technology and actively building skills through projects and training. Ready to contribute to a team with sound technical and communication skills.",
+                shortDesc: "Informatics student at ITENAS with a strong interest in the Internet of Things (IoT), programming, and databases. Highly curious about technology and actively building skills through projects and training. Ready to contribute to a team with sound technical and communication skills.",
+                tags: ["IoT", "Database Development", "Multimedia Design", "Video Production"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS)", year: "2024 - Present", gpa: "" },
-                    { degree: "High School", institution: "SMA Negeri 19 Bandung", year: "2021 - 2024", gpa: "" },
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS)", year: "2024 - Present", gpa: "-" },
+                    { degree: "High School Diploma", institution: "SMA Negeri 19 Bandung", year: "2021 - 2024", gpa: "-" },
                 ],
                 experience: [
-                    { title: "Multimedia & Visual Content Designer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memproduksi aset video dokumenter, desain visual, dan presentasi profil robot S.A.R.A.H." },
                     {
-                        title: "Multimedia & Visual Content Lead",
-                        company: "Various Organizations (SMAN 19 Bandung)",
-                        period: "2022 - 2024",
-                        description: "Mengelola dokumentasi, memproduksi konten multimedia, dan mengorganisasi event teknologi."
+                        title: "Head of Multimedia Division",
+                        company: "OSIS SMAN 19 Bandung",
+                        period: "2022 - 2023",
+                        description: "● Created visual content for school events.\n● Served as chief organizer for a technology-themed webinar.\n● Documented all student council (OSIS) activities during the term."
+                    },
+                    {
+                        title: "Vice Head of Multimedia Division",
+                        company: "IKREMA SMAN 19 Bandung",
+                        period: "2022 - 2023",
+                        description: "● Documented all religious and social activities for IKREMA.\n● Created visual content for preaching (dakwah) purposes and school events."
                     }
                 ],
                 skills: [
-                    { name: "IoT Fundamentals", level: 75 },
-                    { name: "Basic Programming", level: 75 },
-                    { name: "Database Application", level: 78 },
-                    { name: "Multimedia Design", level: 85 },
+                    { name: "Graphic Design: Adobe Photoshop, Adobe Illustrator", level: 0 },
+                    { name: "Video Editing: Adobe Premiere, Adobe After Effects", level: 0 },
+                    { name: "Other: Time Management, Team Collaboration", level: 0 }
                 ],
-                projects: [],
+                projects: [
+                    {
+                        name: "SMA Negeri 19 Class of 2024 Documentary Film",
+                        description: "● Designed the batch documentary film.\n● Served on the documentary production team.\n● Accommodated all needs during the production period.",
+                        tech: []
+                    }
+                ],
                 achievements: [
-                    "Juara 3 Lomba Film Pendek FLS2N Tingkat Kota Bandung (2023)",
-                    "Peserta Lomba Film Pendek FLS2N Tingkat Kota Bandung (2022)",
-                    "S.A.R.A.H Team Member",
+                    "3rd Place Short Film Competition FLS2N at Bandung City Level (2023)",
+                    "Participant in Short Film Competition FLS2N at Bandung City Level (2022)"
                 ],
-                social: { github: "https://github.com/alfarabi", linkedin: "https://linkedin.com/in/alfarabi" },
+                social: { github: "", linkedin: "", web: "" },
             },
         ],
     },
