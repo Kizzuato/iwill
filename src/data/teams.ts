@@ -612,8 +612,8 @@ export const teams: Team[] = [
         fullName: "Intelligent Waste Management System",
         logo: "/logos/netradump.png",
         category: "IoT & Computer Vision",
-        description: "Integrated waste management system using AI cameras for detection, collection, and disposal. Features steering wheel/joystick control and real-time wireless monitoring via web dashboard.",
-        longDescription: "NetraDUMP is an integrated waste management system using AI cameras for detection, collection, and disposal. The system features steering wheel/joystick control and real-time wireless monitoring via web dashboard for efficient waste management operations.",
+        description: "0.2% of waste remains unmanaged, creating serious environmental and health risks, and NetraDUMP directly addresses this gap as an AI-powered robot that detects, sorts, and manages waste in real time. By enabling zero-contact handling, precision steering control, and live dashboard monitoring, NetraDUMP makes waste management safer, smarter, and ready for modern cities.",
+        longDescription: "0.2% of waste remains unmanaged, creating serious environmental and health risks, and NetraDUMP directly addresses this gap as an AI-powered robot that detects, sorts, and manages waste in real time. By enabling zero-contact handling, precision steering control, and live dashboard monitoring, NetraDUMP makes waste management safer, smarter, and ready for modern cities.",
         members: [
             {
                 slug: "malendra",
