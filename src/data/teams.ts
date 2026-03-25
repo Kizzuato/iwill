@@ -15,7 +15,7 @@ export interface MemberCV {
     education: { degree: string; institution: string; year: string; gpa: string }[];
     experience: { title: string; company: string; period: string; description: string }[];
     skills: { name: string; level: number }[];
-    projects: { name: string; description: string; tech: string[] }[];
+    projects: { name: string; description: string; tech: string[]; year?: string }[];
     achievements: string[];
     social: { github?: string; linkedin?: string; instagram?: string; web?: string };
 }
@@ -296,47 +296,48 @@ export const teams: Team[] = [
         fullName: "Remote Operated Vehicle for Environmental Reconnaissance",
         logo: "/logos/rover.png",
         category: "IoT & Computer Vision",
-        description: "Remote Operated Vehicle for Environmental Reconnaissance. A multifunctional RC car with cameras, distance sensors, and web/mobile control for area mapping, human tracking, and obstacle detection.",
-        longDescription: "R.O.V.E.R (Remote Operated Vehicle for Environmental Reconnaissance) is a multifunctional RC car equipped with cameras, distance sensors, and web/mobile control capabilities. The team focuses on developing autonomous systems for area mapping, human tracking, and obstacle detection in various terrains and environments.",
+        description: "Remotely Operated Vehicle for Exploration and Reconnaissance (R.O.V.E.R) is an unmanned ground vehicle designed for remote exploration and surveillance in challenging environments. Equipped with a 2D LiDAR sensor, it performs real-time area scanning to map surroundings, detect obstacles, and support safe and efficient navigation without direct human presence.",
+        longDescription: "Remotely Operated Vehicle for Exploration and Reconnaissance (R.O.V.E.R) is an unmanned ground vehicle designed for remote exploration and surveillance in challenging environments. Equipped with a 2D LiDAR sensor, it performs real-time area scanning to map surroundings, detect obstacles, and support safe and efficient navigation without direct human presence.",
         members: [
             {
                 slug: "deden",
-                name: "Deden Roga",
+                name: "Deden Roga Nurhidayah",
                 photo: "/members/deden.jpg",
                 role: "Team Leader & Hardware Specialist",
                 status: "ACTIVE",
-                email: "deden.roga@mhs.itenas.ac.id",
-                phone: "+62 812 0000 0001",
-                location: "Bandung, Indonesia",
-                bio: "Informatics student with a strong interest in programming and technology development. Coming from a social sciences (IPS) high school background, highly motivated to keep learning and growing in IT through projects, online courses, and organizational experience.",
-                shortDesc: "Informatics student passionate about programming and technology development.",
-                tags: ["Programming", "Team Leadership", "Creativity"],
+                email: "mastiahcbr74@gmail.com",
+                phone: "089525335657",
+                location: "Padalarang, Bandung Barat, Indonesia",
+                bio: "I am an Informatics student with a strong interest in programming and technology development. Despite coming from a social sciences (IPS) background in high school, I have high motivation to continue learning and growing in the IT world. I am accustomed to working both independently and in teams, and possess good adaptability and problem-solving skills. With a strong passion for learning, I continuously hone my technical skills through personal projects, online courses, and organizational experience.",
+                shortDesc: "Informatics student passionate about hardware, electronics repair, and technical problem solving.",
+                tags: ["Electronics", "Computer Assembly", "Team Leadership", "IoT", "Technical Support"],
                 education: [
-                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2024 - Present", gpa: "" },
-                    { degree: "High School (IPS)", institution: "SMA Negeri 3 Rambah Hilir", year: "2021 - 2024", gpa: "" },
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "-" },
+                    { degree: "High School Diploma (Social Sciences)", institution: "SMA Negeri 3 Rambah Hilir", year: "2021 - 2024", gpa: "-" },
                 ],
                 experience: [
-                    { title: "Team Leader & Hardware Specialist", company: "I-WILL Laboratory", period: "2024 - Present", description: "Memimpin tim R.O.V.E.R dan menangani perbaikan infrastruktur perangkat keras." },
                     {
-                        title: "Team Leader / Project Member",
-                        company: "I-WILL Laboratory Projects",
+                        title: "Team Leader & Hardware Specialist",
+                        company: "I-WILL Laboratory",
                         period: "2024 - Present",
-                        description: "Berperan sebagai pemimpin dan anggota tim dalam berbagai proyek IoT, web, dan game seperti R.O.V.E.R, StreamForte, Ruang Seduh, dan Echoes of The Deep: First Descent."
+                        description: "● Leading the R.O.V.E.R team and managing technical infrastructure repairs.\n● Coordinating cross-functional projects involving IoT, web development, and digital media."
                     }
                 ],
                 skills: [
-                    { name: "Electronics & Hardware Prototyping", level: 80 },
-                    { name: "Team Leadership in Tech Projects", level: 82 },
+                    { name: "Electronics & Hardware Repair", level: 88 },
+                    { name: "Computer Assembly & PC Building", level: 92 },
+                    { name: "Team Leadership", level: 85 },
                     { name: "IoT Development", level: 80 },
+                    { name: "Video Editing & Photography", level: 75 },
                 ],
                 projects: [
-                    { name: "R.O.V.E.R", description: "Proyek kendaraan IoT untuk eksplorasi dan pengintaian.", tech: ["IoT", "Robotik"] },
-                    { name: "StreamForte", description: "Proyek berbasis web.", tech: ["Web", "Programming"] },
-                    { name: "Ruang Seduh", description: "Platform web bertema kedai/kopi.", tech: ["Web", "Programming"] },
-                    { name: "Echoes of The Deep: First Descent", description: "Proyek gabungan IoT dan game.", tech: ["IoT", "Game"] },
+                    { name: "R.O.V.E.R", description: "Design and development of a remote-controlled IoT vehicle for exploration and reconnaissance.", tech: ["IoT", "Robotics"], year: "2024" },
+                    { name: "StreamForte", description: "A web-based platform for media streaming and community engagement.", tech: ["Web Development", "UI/UX"], year: "2024" },
+                    { name: "Ruang Seduh", description: "Coffee shop management and community platform interface.", tech: ["Web Development"], year: "2024" },
+                    { name: "Echoes of The Deep: First Descent", description: "An integrated project combining IoT sensors with immersive game mechanics.", tech: ["IoT", "Game Development"], year: "2024" },
                 ],
                 achievements: ["R.O.V.E.R Team Leader"],
-                social: { github: "https://github.com/deden", linkedin: "https://linkedin.com/in/deden" },
+                social: { github: "", linkedin: "", instagram: "https://instagram.com/yr.oga" },
             },
             {
                 slug: "dzakiyya",
@@ -344,97 +345,161 @@ export const teams: Team[] = [
                 photo: "/members/dzakiyya.JPG",
                 role: "Navigation & SLAM Engineer",
                 status: "ACTIVE",
-                email: "dzakiyya@mhs.itenas.ac.id",
-                phone: "+62 858 0134 6628",
+                email: "dzakiyya.puteri@mhs.itenas.ac.id",
+                phone: "+6285801346628",
                 location: "Bandung, Indonesia",
-                bio: "Contributing to R.O.V.E.R development with focus on navigation and mapping systems.",
-                shortDesc: "Working on navigation and SLAM systems for R.O.V.E.R.",
-                tags: ["Navigation", "SLAM", "Python"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Bandung National Institute of Technology", year: "2022 - Present", gpa: "3.80/4.00" }],
+                bio: "Undergraduate Informatics student with experience in full-stack web application development, covering both backend and user interfaces. Proficient in Laravel, React JS, Vue JS, Express JS, and Prisma ORM, with expertise in deployment, system maintenance, and real-time server development. Strongly oriented towards performance, code quality, and user experience.",
+                shortDesc: "Undergraduate Informatics Student & Full Stack Developer specializing in real-time systems and modern web technologies.",
+                tags: ["Full Stack", "React JS", "Express JS", "Laravel", "Vue JS", "Real-time Systems"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional Bandung", year: "2024 - Present", gpa: "-" },
+                    { degree: "Vocational High School Degree (Software Engineering)", institution: "SMK Negeri 13 Bandung", year: "2021 - 2024", gpa: "-" }
+                ],
                 experience: [
-                    { title: "Navigation & SLAM Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengembangkan sistem navigasi pemetaan presisi tinggi (SLAM) untuk R.O.V.E.R." }, { title: "R.O.V.E.R Team Member", company: "I-WILL Laboratory", period: "2024 - Present", description: "Developing navigation and mapping systems." }],
-                skills: [{ name: "Python", level: 82 }, { name: "SLAM", level: 78 }, { name: "ROS", level: 75 }, { name: "Computer Vision", level: 72 }],
-                projects: [{ name: "Mapping System", description: "Real-time environment mapping using SLAM", tech: ["ROS", "Cartographer", "LiDAR"] }],
-                achievements: ["R.O.V.E.R Team Member"],
-                social: { github: "https://github.com/dzakiyya", linkedin: "https://linkedin.com/in/dzakiyya" },
+                    {
+                        title: "Full Stack Developer",
+                        company: "PT. Curaweda Palagan Innotech",
+                        period: "2023 - 2024",
+                        description: "● Designed and built backend servers using Express JS and Prisma ORM.\n● Developed web interfaces aligned with UI/UX designs using React and Vue JS.\n● Deployed applications via cPanel with CI/CD integration and maintained systems via SSH.\n● Collaborated with development teams using Git & GitHub."
+                    },
+                    {
+                        title: "Informatics Student Association Member",
+                        company: "HMIF Itenas",
+                        period: "2024 - 2025",
+                        description: "● Built an order tracking application via Google Forms utilizing Google Apps Script."
+                    },
+                    {
+                        title: "Full Stack Developer",
+                        company: "Innovative Laboratory I-WILL (Smart Train & Rover Team)",
+                        period: "2025 - 2026",
+                        description: "● Engineered real-time monitoring servers using Express JS and WebSocket.\n● Developed interactive web interfaces using React JS and Tailwind CSS."
+                    },
+                    {
+                        title: "Project Manager",
+                        company: "Academic Project – Web Based Monitoring System",
+                        period: "2025 - 2026",
+                        description: "● Managed project workflows to ensure successful delivery and high-quality outcomes.\n● Built role-based web systems using Laravel and Bootstrap."
+                    }
+                ],
+                skills: [
+                    { name: "React JS", level: 90 },
+                    { name: "Express JS", level: 88 },
+                    { name: "Laravel", level: 85 },
+                    { name: "Vue JS", level: 82 },
+                    { name: "Prisma ORM", level: 85 },
+                    { name: "Tailwind CSS", level: 90 },
+                    { name: "Real-time Systems (WebSocket)", level: 88 }
+                ],
+                projects: [
+                    { name: "Website kelola data keuangan laundry", description: "Developed a comprehensive website for managing laundry financial data and transactions.", tech: ["Next.js", "Tailwind CSS"], year: "2025" },
+                    { name: "Website portofolio pribadi", description: "Created a personal portfolio to showcase projects and professional journey.", tech: ["Next.js", "Tailwind CSS"], year: "2024" },
+                    { name: "Website kelola tugas karyawan", description: "Built a platform for monitoring and managing employee tasks efficiently.", tech: ["Web", "Management"], year: "2024" },
+                    { name: "Website Ischool", description: "Designed and implemented Ischool educational platform interface.", tech: ["Next.js", "Figma"], year: "2024" },
+                ],
+                achievements: [
+                    "Samsung Innovation Campus (2023)",
+                    "Cybersecurity Hackathon (2022)",
+                    "Huawei ICT Competition 2025 – Innovation Track Participant (2025)"
+                ],
+                social: { github: "https://github.com/Kizzuato", linkedin: "https://linkedin.com/in/dzakiyya-puteri-aulia", web: "https://portofolio-kizzuato.vercel.app" },
             },
             {
                 slug: "asri",
-                name: "Asri Tanisha R.",
+                name: "Asri Tanisha Rumapea",
                 photo: "/members/asri.jpg",
                 role: "Computer Vision Engineer",
                 status: "ACTIVE",
                 email: "asri.tanisha@mhs.itenas.ac.id",
-                phone: "+62 812 0000 0003",
+                phone: "081360012451",
                 location: "Bandung, Indonesia",
-                bio: "Dedicated Informatics student focusing on Computer Vision, Artificial Intelligence, and Mobile Development. Experienced in YOLO-based detection, MobileNetV2+LSTM violence detection, and remote-controlled ROVER systems. Actively participating in national and international technology competitions.",
-                shortDesc: "Informatics student specializing in computer vision, AI, and mobile development.",
+                bio: "A dedicated Informatics student at Itenas Bandung with a specialized focus on Computer Vision, Artificial Intelligence, and Mobile Development. Experienced in practical projects involving YOLO-based detection, MobileNetV2+LSTM violence detection, and remote-controlled systems (ROVER). Actively participates in national and international technology competitions such as the Huawei ICT Competition and possesses strong communication skills for mentoring students.",
+                shortDesc: "Informatics student specializing in Computer Vision, AI, and Mobile Development with a focus on real-time detection systems.",
                 tags: ["Computer Vision", "AI", "Mobile Development", "YOLO", "LSTM"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - 2027", gpa: "3.64/4.00" }],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional", year: "2023 - 2027", gpa: "3.64/4.00" }
+                ],
                 experience: [
-                    { title: "Computer Vision Engineer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Mengimplementasikan model deteksi objek (YOLO) pada robot R.O.V.E.R." },
                     {
                         title: "Research Division Member",
                         company: "I-WILL Laboratory",
                         period: "2024 - Present",
-                        description: "Berpartisipasi dalam penelitian berbasis computer vision dan AI."
+                        description: "● Implementing object detection models (YOLO) on the R.O.V.E.R robotic system.\n● Conducting research based on computer vision and artificial intelligence integration."
+                    },
+                    {
+                        title: "Freelance Data Entry & Content Reviewer",
+                        company: "Freelance",
+                        period: "2024 - Present",
+                        description: "● Managed and reviewed digital content data to ensure accuracy and quality."
+                    },
+                    {
+                        title: "Freelance Content Designer",
+                        company: "Freelance (Canva)",
+                        period: "2024 - Present",
+                        description: "● Created professional visual content and marketing materials using Canva."
                     }
                 ],
                 skills: [
-                    { name: "Python", level: 85 },
-                    { name: "YOLO", level: 82 },
-                    { name: "CNN / LSTM", level: 82 },
-                    { name: "OpenCV", level: 80 },
-                    { name: "Java", level: 75 },
-                    { name: "JavaScript", level: 75 },
-                    { name: "Data Analysis / MySQL", level: 78 },
+                    { name: "Programming: Python, Java, JavaScript", level: 85 },
+                    { name: "Computer Vision (OpenCV)", level: 90 },
+                    { name: "Machine Learning (CNN, LSTM, YOLO)", level: 88 },
+                    { name: "Database (MySQL)", level: 80 },
+                    { name: "Network Simulation (eNSP)", level: 75 },
+                    { name: "Tools: Google Colab, Raspberry Pi, Git, VS Code", level: 85 },
                 ],
                 projects: [
-                    { name: "Rover – Augmented Security Patrol System", description: "Sistem keamanan berbasis AI dan monitoring jarak jauh dengan teknologi Python, YOLO, MQTT, dan Raspberry Pi.", tech: ["Python", "YOLO", "MQTT", "Raspberry Pi"] },
-                    { name: "Violence Detection System", description: "Deteksi kekerasan real-time menggunakan CNN (MobileNetV2) dan LSTM.", tech: ["Python", "MobileNetV2", "LSTM", "OpenCV"] },
+                    { name: "Rover – Augmented Security Patrol System", description: "AI-powered security and remote monitoring system using Python, YOLO, MQTT, and Raspberry Pi.", tech: ["Python", "YOLO", "MQTT", "Raspberry Pi"], year: "2024" },
+                    { name: "Violence Detection System", description: "Real-time violence detection system utilizing CNN (MobileNetV2) and LSTM architectures.", tech: ["Python", "MobileNetV2", "LSTM", "OpenCV"], year: "2024" },
                 ],
-                achievements: ["R.O.V.E.R Team Member"],
-                social: { github: "https://github.com/asri", linkedin: "https://linkedin.com/in/asri" },
+                achievements: [
+                    "Huawei ICT Competition 2025 – Innovation Track Participant",
+                    "Samsung Innovation Campus Participant",
+                    "R.O.V.E.R Team Member"
+                ],
+                social: { github: "https://github.com/asri20", linkedin: "https://linkedin.com/in/asri-tanisha-rumapea", web: "https://r.listwr.me/kEVRCW" },
             },
             {
                 slug: "matilde",
-                name: "Matilde Ina",
+                name: "Matilde Ina Ola Dosinaeng",
                 photo: "/members/ina.jpg",
                 role: "IoT & Web Developer",
                 status: "ACTIVE",
                 email: "matilde.ina@mhs.itenas.ac.id",
-                phone: "+62 812 0000 0004",
+                phone: "+62-812-3877-0420",
                 location: "Bandung, Indonesia",
-                bio: "Active 6th-semester Informatics student at ITENAS Bandung with strong interest in Internet of Things (IoT), web development, and digital image processing. Experienced with Python, Java, JavaScript, Node.js, React.js, C++, Pascal, and hands-on projects using Arduino and Raspberry Pi.",
-                shortDesc: "Informatics student focusing on IoT, web development, and digital image processing.",
-                tags: ["IoT", "Web Development", "Digital Image Processing", "UI/UX"],
-                education: [{ degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS) Bandung", year: "2023 - Present", gpa: "" }],
+                bio: "An active 6th-semester Informatics student at ITENAS Bandung with a strong interest in Internet of Things (IoT), Web Development, and Digital Image Processing. Proficient in multiple programming languages such as Python, Java, JavaScript, Node.js, React.js, C++, and Pascal, with hands-on experience in developing academic and group projects using Arduino and Raspberry Pi. Dedicated, adaptable, and enthusiastic about applying technology to solve real-world problems.",
+                shortDesc: "Informatics student specializing in IoT, Web Development, and Digital Image Processing with a focus on real-world problem solving.",
+                tags: ["IoT", "Web Development", "Digital Image Processing", "Machine Learning", "UI/UX Design"],
+                education: [
+                    { degree: "Bachelor of Informatics", institution: "Institut Teknologi Nasional (ITENAS) Bandung", year: "2023 - Present", gpa: "-" }
+                ],
                 experience: [
-                    { title: "IoT & Web Developer", company: "I-WILL Laboratory", period: "2024 - Present", description: "Membangun dashboard web pemantauan jarak jauh dan integrasi IoT untuk R.O.V.E.R." },
                     {
-                        title: "R.O.V.E.R Team Member",
+                        title: "IoT & Web Developer",
                         company: "I-WILL Laboratory",
                         period: "2024 - Present",
-                        description: "Mengembangkan sistem R.O.V.E.R berbasis IoT untuk eksplorasi dan reconnaissance."
+                        description: "● Co-developed R.O.V.E.R (Remotely Operated Vehicle for Exploration and Reconnaissance).\n● Integrated embedded systems, sensors, and network communication for real-time monitoring.\n● Designed and simulated network topologies and interactive web-based dashboards."
                     }
                 ],
                 skills: [
-                    { name: "Python", level: 85 },
-                    { name: "Java", level: 80 },
-                    { name: "JavaScript / Node.js / React.js", level: 82 },
-                    { name: "C++ / Pascal", level: 78 },
-                    { name: "SQL / Database Programming", level: 80 },
-                    { name: "Arduino / Raspberry Pi", level: 82 },
+                    { name: "Programming: Python, Java, JavaScript, Node.js, React.js", level: 88 },
+                    { name: "IoT: Arduino, Raspberry Pi, Sensor Integration", level: 90 },
+                    { name: "Web Development: HTML, CSS, Laravel", level: 85 },
+                    { name: "Machine Learning & AI: MobileNetV2, BERT, SVM", level: 82 },
+                    { name: "Design & Tools: Figma, GitHub, ENSP, Lazarus", level: 80 },
+                    { name: "Soft Skills: Teamwork, Problem Solving, Analytical Thinking", level: 90 }
                 ],
                 projects: [
-                    { name: "Automatic Cigarette Smoke Detection and Air Purification", description: "Prototype sistem deteksi asap rokok dan pemurnian udara menggunakan Arduino Uno.", tech: ["Arduino", "Sensors", "IoT"] },
-                    { name: "Distance Warning System", description: "Sistem peringatan jarak menggunakan sensor ultrasonik dan inframerah dengan Raspberry Pi 4.", tech: ["Raspberry Pi", "Sensors"] },
-                    { name: "Violence Detection Using MobileNetV2 and TSM", description: "Deteksi kekerasan real-time dengan MobileNetV2 dan Temporal Shift Module.", tech: ["Python", "MobileNetV2", "TSM"] },
-                    { name: "Indonesian Supreme Court Decision Retrieval (BM25 + BERT)", description: "Sistem information retrieval untuk putusan MA menggunakan BM25 dan BERT.", tech: ["Python", "BM25", "BERT"] },
-                    { name: "Skysense Mobile Application", description: "Aplikasi mobile Skysense untuk informasi cuaca dan lingkungan.", tech: ["Mobile", "IoT"] },
+                    { name: "R.O.V.E.R (Remotely Operated Vehicle)", description: "IoT-based remotely operated vehicle for exploration with real-time monitoring and sensor integration.", tech: ["IoT", "Sensors", "Networking"], year: "2024-2025" },
+                    { name: "Real-Time Violence Detection (MobileNetV2 + TSM)", description: "Video-based violence detection system using lightweight CNN architecture and temporal modeling.", tech: ["Python", "MobileNetV2", "TSM", "Computer Vision"], year: "2024" },
+                    { name: "Indonesian Supreme Court Decision Retrieval", description: "Information retrieval system using BM25 and BERT semantic search for legal documents.", tech: ["Python", "BM25", "BERT", "NLP"], year: "2024" },
+                    { name: "Skysense Mobile Application", description: "Mobile application designed to provide weather and environmental information through an intuitive interface.", tech: ["Mobile", "IoT"], year: "2024" },
+                    { name: "Distance Warning System", description: "Obstacle detection system using ultrasonic and infrared sensors with Raspberry Pi 4.", tech: ["Raspberry Pi", "Sensors"], year: "2023" },
+                    { name: "Automatic Cigarette Smoke Detection", description: "Prototype system for automatic smoke detection and air purification using Arduino Uno.", tech: ["Arduino", "Sensors"], year: "2023" },
+                    { name: "User Review Sentiment Analysis", description: "Sentiment classification system for user reviews using the Support Vector Machine (SVM) algorithm.", tech: ["Python", "SVM", "NLP"], year: "2024" },
+                    { name: "PT KAI Bandung Network Topology", description: "Design and simulation of large-scale network topology using ENSP.", tech: ["Networking", "ENSP"], year: "2024" }
                 ],
                 achievements: ["R.O.V.E.R Team Member"],
-                social: { github: "https://github.com/matilde", linkedin: "https://linkedin.com/in/matilde" },
+                social: { github: "", linkedin: "" },
             },
         ],
     },
