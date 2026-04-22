@@ -94,9 +94,11 @@ export default function Arc02Page() {
                   BACK TO HOME
                 </PixelButton>
               </Link>
-              <PixelButton variant="primary" className="min-w-[200px] shadow-[0_5px_0_rgba(var(--primary),0.5)]">
-                Join Us Now!
-              </PixelButton>
+              <Link target="_blank" href="https://bit.ly/I-WILLARC-02">
+                <PixelButton variant="primary" className="min-w-[200px] shadow-[0_5px_0_rgba(var(--primary),0.5)]">
+                  Join Us Now!
+                </PixelButton>
+              </Link>
             </div>
           </div>
 
@@ -111,8 +113,8 @@ export default function Arc02Page() {
         <p className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest pt-8">
           Innovative Workingspace Integrated Living Laboratory // Arc Selector v2
         </p>
-      </div>
-    </main>
+      </div >
+    </main >
   );
 }
 
