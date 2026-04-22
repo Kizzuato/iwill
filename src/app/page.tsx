@@ -5,6 +5,7 @@ import { PixelButton } from "@/components/pixel-button";
 import { GridBackground } from "@/components/grid-background";
 import { PixelTimeline } from "@/components/pixel-timeline";
 import { ArcSelector } from "@/components/arc-selector";
+import { BecomingPartCTA } from "@/components/becoming-part-cta";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -46,11 +47,15 @@ export default function Home() {
              <ArcSelector selectedArc={selectedArc} onSelectArc={setSelectedArc} />
           </motion.div>
 
+          <AnimatePresence>
+            {selectedArc === 2 && <BecomingPartCTA />}
+          </AnimatePresence>
+
           <motion.div 
              initial={{ opacity: 0 }}
              animate={{ opacity: 1 }}
              transition={{ delay: 2, duration: 1 }}
-             className="pt-8 flex flex-col sm:flex-row gap-4 justify-center"
+             className="pt-12 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link href="/codex">
               {/* <PixelButton className="text-lg" as="div">

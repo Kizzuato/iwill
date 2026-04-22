@@ -9,9 +9,9 @@ interface ArcSelectorProps {
 }
 
 const arcs = [
-  { id: 0, title: "ARC-0: FOUNDING ARC", status: "UNLOCKED", desc: "The Origin Story" },
-  { id: 1, title: "ARC-1: AWAKENING", status: "UNLOCKED", desc: "The Expansion" },
-  { id: 2, title: "ARC-2: ASCENSION", status: "LOCKED", desc: "Future Content" },
+  { id: 0, title: "ARC-0:  The foundation", status: "UNLOCKED", desc: "The Origin Story" },
+  { id: 1, title: "ARC-1: The first leap, continuing the arch of change", status: "UNLOCKED", desc: "The Expansion" },
+  { id: 2, title: "ARC-2: The Convergence Embedded in Action", status: "UNLOCKED", desc: "Becoming our part" },
 ];
 
 export function ArcSelector({ selectedArc, onSelectArc }: ArcSelectorProps) {
@@ -33,7 +33,7 @@ export function ArcSelector({ selectedArc, onSelectArc }: ArcSelectorProps) {
                 onSelectArc(arc.id);
                 // Optional: Smooth scroll to timeline if selecting active arc
                 if (isSelected) {
-                   document.getElementById("history-timeline")?.scrollIntoView({ behavior: "smooth" });
+                  document.getElementById("history-timeline")?.scrollIntoView({ behavior: "smooth" });
                 }
               }}
               whileHover={{ x: 10 }}
@@ -46,34 +46,34 @@ export function ArcSelector({ selectedArc, onSelectArc }: ArcSelectorProps) {
             >
               {/* Selection Indicator */}
               <div className={clsx(
-                  "w-4 h-4 md:w-6 md:h-6 flex items-center justify-center border-2",
-                  isSelected ? "border-primary bg-primary" : "border-gray-500"
+                "w-4 h-4 md:w-6 md:h-6 flex items-center justify-center border-2",
+                isSelected ? "border-primary bg-primary" : "border-gray-500"
               )}>
-                  {isSelected && <div className="w-2 h-2 md:w-3 md:h-3 bg-white" />}
+                {isSelected && <div className="w-2 h-2 md:w-3 md:h-3 bg-white" />}
               </div>
 
               <div className="flex-1">
-                  <h4 className={clsx(
-                      "font-pixel text-sm md:text-lg",
-                      isSelected ? "text-primary text-shadow-sm" : "text-gray-400 group-hover:text-white"
-                  )}>
-                      {arc.title}
-                  </h4>
-                  {isSelected && (
-                      <p className="text-xs md:text-sm text-primary/80 font-mono">
-                          &gt; {arc.desc}
-                      </p>
-                  )}
+                <h4 className={clsx(
+                  "font-pixel text-sm md:text-lg",
+                  isSelected ? "text-primary text-shadow-sm" : "text-gray-400 group-hover:text-white"
+                )}>
+                  {arc.title}
+                </h4>
+                {isSelected && (
+                  <p className="text-xs md:text-sm text-primary/80 font-mono">
+                    &gt; {arc.desc}
+                  </p>
+                )}
               </div>
 
               {/* Status Badge */}
               <span className={clsx(
-                  "text-[10px] md:text-xs font-pixel px-2 py-1 border",
-                  arc.status === "UNLOCKED" 
-                    ? "border-green-500 text-green-500" 
-                    : "border-gray-600 text-gray-600"
+                "text-[10px] md:text-xs font-pixel px-2 py-1 border",
+                arc.status === "UNLOCKED"
+                  ? "border-green-500 text-green-500"
+                  : "border-gray-600 text-gray-600"
               )}>
-                  {arc.status}
+                {arc.status}
               </span>
 
               {/* Scanline Effect on Hover */}

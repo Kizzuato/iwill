@@ -71,26 +71,58 @@ export function PixelTimeline({ selectedArc }: { selectedArc: number }) {
   
   if (arcEvents.length === 0) {
       return (
-          <div className="h-screen w-full flex items-center justify-center bg-black relative overflow-hidden">
-               <div className="text-center space-y-6 relative z-10 px-6">
-                   <div className="w-20 h-20 mx-auto border-4 border-red-500 rounded-full flex items-center justify-center animate-pulse">
-                        <span className="font-pixel text-4xl text-red-500">!</span>
-                   </div>
-                   <h2 className="font-pixel text-4xl md:text-6xl text-red-500 text-shadow-pixel glitch-text">
-                       ACCESS DENIED
-                   </h2>
-                   <p className="font-mono text-xl text-gray-400">
-                       &gt; ARC {selectedArc} DATA ENCRYPTED.<br/>
-                       &gt; PLEASE RETURN LATER.
-                   </p>
-                   <div className="pt-8">
-                       <span className="font-pixel text-xs bg-red-900/20 text-red-400 px-4 py-2 border border-red-500/50">
-                           STATUS: LOCKED
-                       </span>
-                   </div>
-               </div>
+          <div className="h-screen w-full flex items-center justify-center bg-background relative overflow-hidden">
+               {/* Grid Background Effect */}
+               <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]" />
                
-               {/* Background Noise */}
+               <motion.div 
+                   initial={{ scale: 0.9, opacity: 0 }}
+                   animate={{ scale: 1, opacity: 1 }}
+                   className="text-center space-y-8 relative z-10 px-6 max-w-2xl"
+               >
+                   <div className="relative inline-block">
+                        <div className="w-24 h-24 mx-auto border-4 border-primary/50 flex items-center justify-center relative overflow-hidden bg-primary/5">
+                             <motion.div 
+                                animate={{ 
+                                    y: [-100, 100],
+                                    opacity: [0, 1, 0]
+                                }}
+                                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/20 to-transparent w-full h-1/2"
+                             />
+                             <span className="font-pixel text-4xl text-primary animate-pulse">?</span>
+                        </div>
+                        {/* Decorative corners */}
+                        <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-primary" />
+                        <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-primary" />
+                   </div>
+
+                   <div className="space-y-4">
+                       <h2 className="font-pixel text-4xl md:text-6xl text-primary text-shadow-pixel tracking-tighter">
+                           BECOMING OUR PART
+                       </h2>
+                       <div className="h-1 w-24 bg-primary mx-auto" />
+                   </div>
+
+                   <p className="font-mono text-lg md:text-xl text-foreground/80 leading-relaxed">
+                       &gt; ARC-0{selectedArc} PROTOCOL INITIALIZED...<br/>
+                       &gt; CONTENT IS CURRENTLY IN EVOLUTION.<br/>
+                       &gt; YOUR CONTRIBUTION IS THE MISSING KEY.
+                   </p>
+
+                   <div className="pt-4">
+                       <motion.div 
+                            animate={{ opacity: [0.4, 1, 0.4] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                            className="inline-flex items-center gap-2 font-pixel text-xs bg-primary/10 text-primary px-6 py-3 border-2 border-primary/50 shadow-[0_0_15px_rgba(var(--primary),0.2)]"
+                       >
+                           <span className="w-2 h-2 bg-primary rounded-full" />
+                           STATUS: EVOLVING
+                       </motion.div>
+                   </div>
+               </motion.div>
+               
+               {/* Background Noise and Effects */}
                <div className="absolute inset-0 bg-[url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif')] opacity-5 mix-blend-overlay pointer-events-none" />
           </div>
       )
